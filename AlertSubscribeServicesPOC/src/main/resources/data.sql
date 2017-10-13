@@ -9,3 +9,6 @@ INSERT INTO `communication` (`id`, `name`, `description`) VALUES
          (1906, 'Ship Consent Final', 'Final followup consent from member')	
 
 ;
+INSERT INTO `program` (`id`, `name`, `description`) VALUES
+         (1, 'Prescription Alerts', 'PBM Communications including Order Status and Refill Reminder alerts')
+;
