@@ -12,3 +12,6 @@ INSERT INTO `communication` (`id`, `name`, `description`) VALUES
 INSERT INTO `program` (`id`, `name`, `description`) VALUES
          (1, 'Prescription Alerts', 'PBM Communications including Order Status and Refill Reminder alerts')
 ;
+INSERT INTO `program_configuration` (`name`, `description`, `program_id`) VALUES
+         ('Prescription Alerts Order Status', 'Order Status Program-level Configuration', 1)
+;

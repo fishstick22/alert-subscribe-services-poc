@@ -15,6 +15,12 @@ public class CommunicationService implements ICommunicationService {
 	private CommunicationRepository communicationDAO;
 
 	@Override
+	public Communication getCommunicationById(Integer id) {
+		Communication obj = communicationDAO.findOne(id);
+		return obj;
+	}
+	
+	@Override
 	public List<Communication> getAllCommunications() {
 		return communicationDAO.findAll();
 	}

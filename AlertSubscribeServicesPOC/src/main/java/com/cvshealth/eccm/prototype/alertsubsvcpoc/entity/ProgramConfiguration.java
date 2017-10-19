@@ -1,36 +1,37 @@
 package com.cvshealth.eccm.prototype.alertsubsvcpoc.entity;
 
 import java.io.Serializable;
-import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
+//https://dzone.com/articles/circular-dependencies-jackson
 @Entity
 @JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id")
-public class Program implements Serializable {
+public class ProgramConfiguration implements Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1571336590866311408L;
+	private static final long serialVersionUID = -1312813636559120957L;
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String name;
 	private String description;
 	
-	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="program")
-	//@OneToMany
-	//@JoinColumn(name="id")
-	private Set<ProgramConfiguration> programConfiguration;
+	@ManyToOne
+	@JoinColumn(name="program_id",
+    				nullable=false)
+	private Program program;	// DB FK
 	
 	public int getId() {
 		return id;
@@ -50,10 +51,10 @@ public class Program implements Serializable {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Set<ProgramConfiguration> getProgramConfiguration() {
-		return programConfiguration;
+	public Program getProgram() {
+		return program;
 	}
-	public void setProgramConfiguration(Set<ProgramConfiguration> programConfiguration) {
-		this.programConfiguration = programConfiguration;
+	public void setProgram(Program program) {
+		this.program = program;
 	}
 }

@@ -6,6 +6,7 @@ import com.cvshealth.eccm.prototype.alertsubsvcpoc.entity.Communication;
 
 public interface ICommunicationService {
 
-	List<Communication> getAllCommunications();
+	Communication getCommunicationById(Integer id);
 
+	List<Communication> getAllCommunications();
 }

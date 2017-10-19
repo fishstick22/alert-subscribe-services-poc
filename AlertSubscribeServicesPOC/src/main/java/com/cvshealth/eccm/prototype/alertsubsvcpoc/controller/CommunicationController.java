@@ -20,11 +20,17 @@ import com.cvshealth.eccm.prototype.alertsubsvcpoc.service.ICommunicationService
 //http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cors.html
 @CrossOrigin 
 @Controller
-@RequestMapping("/service")
+@RequestMapping("/api")
 public class CommunicationController {
 
 	@Autowired
 	private ICommunicationService communicationService;
+	
+	@RequestMapping(value="/communication/{id}", method = RequestMethod.GET )
+	public ResponseEntity<Communication> getCommunicationById(@PathVariable("id") Integer id) {
+		Communication communication = communicationService.getCommunicationById(id);
+		return new ResponseEntity<Communication>(communication, HttpStatus.OK);
+	}
 	
 	@RequestMapping(value= "/communication", method = RequestMethod.GET)
 	public ResponseEntity<List<Communication>> getAllCommunications() {

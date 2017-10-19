@@ -15,8 +15,38 @@ public class ProgramService implements IProgramService {
 	private ProgramRepository programDAO;
 
 	@Override
+	public Program getProgramById(Integer id) {
+		Program obj = programDAO.findOne(id);
+		return obj;
+	}
+	
+	@Override
 	public List<Program> getAllPrograms() {
 		return programDAO.findAll();
 	}
+
+	@Override
+	public boolean addProgram(Program program) {
+		if (programDAO.existsByName(program.getName())) {
+			//logger.debug("addPerson " + person.getName() + " already Exists!");
+			return false;
+		} else {
+			programDAO.save(program);
+			return true;
+		}
+	}
+
+	@Override
+	public void updateProgram(Program program) {
+		programDAO.save(program);
+		
+	}
+
+	@Override
+	public void deleteProgram(Integer id) {
+		programDAO.delete(id);
+		
+	}
+
 	
 }

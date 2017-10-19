@@ -17,11 +17,11 @@ public class Communication implements Serializable {
 	 */
 	private static final long serialVersionUID = -8425884888221667448L; 
 
+	@Id
 	private int id;
 	private String name;
 	private String description;
 	
-	@Id
 	public int getId() {
 		return id;
 	}
