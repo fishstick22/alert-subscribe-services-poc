@@ -12,6 +12,10 @@ INSERT INTO `communication` (`id`, `name`, `description`) VALUES
 INSERT INTO `program` (`id`, `name`, `description`) VALUES
          (1, 'Prescription Alerts', 'PBM Communications including Order Status and Refill Reminder alerts')
 ;
-INSERT INTO `program_configuration` (`name`, `description`, `program_id`) VALUES
-         ('Prescription Alerts Order Status', 'Order Status Program-level Configuration', 1)
+INSERT INTO `program_configuration` 
+         (`name`, `description`, `chan_email_priority`, `chan_ivr_priority`, `chan_sms_priority`, 
+          `chan_mail_priority`, `chan_mobile_priority`, `chan_mandatory`, `effective`, `expiration`, 
+          `program_id`, `communication_id`) VALUES
+         ('Prescription Alerts Order Status', 'Order Status Program-level Configuration', 2, 3, 1, 0, 0, 'Email', 
+          '2017-1-1', '9999-12-31', 1, 261)
 ;

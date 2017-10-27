@@ -37,6 +37,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		
+		<!-- https://stackoverflow.com/questions/26739310/with-spring-boot-how-to-post-json-object-that-represents-an-entity-whose-member 
+			I found out that the correct format is to provide the URI of the referenced entity, i.e in this case it should be
+			{"customer":"http://localhost:8084/customers/customer/1"}
+			However, this only worked after I added the data-rest dependency
+		-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>mysql</groupId>

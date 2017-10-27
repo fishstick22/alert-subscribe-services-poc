@@ -1,15 +1,24 @@
 package com.cvshealth.eccm.prototype.alertsubsvcpoc.entity;
 
 import java.io.Serializable;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
+@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope = Communication.class)
 public class Communication implements Serializable {
 
 	/**
@@ -21,6 +30,10 @@ public class Communication implements Serializable {
 	private int id;
 	private String name;
 	private String description;
+	
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="communication")
+	@JsonIdentityReference(alwaysAsId = true)
+	private Set<ProgramConfiguration> programConfiguration;
 	
 	public int getId() {
 		return id;
@@ -39,6 +52,12 @@ public class Communication implements Serializable {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	public Set<ProgramConfiguration> getProgramConfiguration() {
+		return programConfiguration;
+	}
+	public void setProgramConfiguration(Set<ProgramConfiguration> programConfiguration) {
+		this.programConfiguration = programConfiguration;
 	}
 	
 	

@@ -11,10 +11,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
-@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id")
+@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope = Program.class)
 public class Program implements Serializable {
 
 	/**
@@ -28,8 +29,7 @@ public class Program implements Serializable {
 	private String description;
 	
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="program")
-	//@OneToMany
-	//@JoinColumn(name="id")
+	@JsonIdentityReference(alwaysAsId = true)
 	private Set<ProgramConfiguration> programConfiguration;
 	
 	public int getId() {
