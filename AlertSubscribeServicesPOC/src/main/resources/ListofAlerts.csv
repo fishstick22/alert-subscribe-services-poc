@@ -1,0 +1,214 @@
+Alert,Description,Alert #,Timing,Batch Run Times (CST),Current Priority,Portrait Priority,Alert Type,Alert Category,Mandatory Alert,Triggered By,Project Associated,Volume Based on Sept  2,Monthly Projection in Sept,Volume Projected Per Month,Branding,Live Date,Retired Date,Added to Egain Reports,Secure MQ Migrated,Project / Major     Secure MQ Migrated,Portrait Migrated ,Portrait Migrated Channel,CMP Delivery Channels Available*,Input Queue Name,Lower Environment Test XML Location,Notes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Order Received ,Notifies a member when their order is received,261,Real-time,,2,2,Order Status,Order Catergory,NO,LINKS,,103657,"3,213,367",,,Client Secure channel live date-04/15/2016,,,Y,ITPR018602 - Delivery Dates Phase 1       August 2017 Major,Y,"Email, Secure (August Major), SMS (May Minor)","Email/Phone/
+Text Message/Secure/Client Secure Message",ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/Order%20Received.xml,"* Will be triggered by LINKS as part of the Amazon Timely Order Received Alert project (Aug 2014)
+* Goes through legacy CMP for Phone, Text and Secure Message alerts
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Order Shipped,Notifies a member when their order is shipped,264,Real-time,,3,2,Order Status,Order Catergory,NO,LINKS,,151332,"4,691,292",,,Client Secure channel live date-04/15/2016,,,Y,ITPR018602 - Delivery Dates Phase 1       August 2017 Major,,"Email, Secure (August Major), SMS (May Minor)","Email/Phone/
+Text Message/Secure/Client Secure Message",ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/Order%20Shipped.xml,"* Will be triggered by LINKS as part of the Existing Order Status project (Aug 2014)
+* Goes through legacy CMP for Phone, Text and Secure Message alerts
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Future Fill Held ,Notifies a member when their order is held due to refill too soon,1343,Batch,"3AM, 6AM, 9AM, 12PM, 3PM, 6PM, 9PM AND 12AM.",5,3,Order Status,Order Catergory,YES,LINKS,,11192,"346,952",,,Client Secure channel live date-04/15/2016,,,,,Y,"Email, SMS(may minor)","Email/Phone/
+Text Message/Secure/Client Secure Message",,,"* Will be triggered by LINKS as part of the Existing Order Status project (Aug 2014)
+* Goes through legacy CMP for Phone, Text and Secure Message alerts
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Future Fill Split ,Notifies a member when part of their order is held due to refill too soon,1344,Batch,"3AM, 6AM, 9AM, 12PM, 3PM, 6PM, 9PM AND 12AM.",5,3,Order Status,Order Catergory,YES,LINKS,,13333,"413,323",,,Client Secure channel live date-04/15/2016,,,,,Y,"Email,SMS","Email/Phone/
+Text Message/Secure/Client Secure Message",,,"* Will be triggered by LINKS as part of the Existing Order Status project (Aug 2014)
+* Goes through legacy CMP for Phone, Text and Secure Message alerts
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Future Fill Release Reminder,The Future Fill Release Reminder alert will be triggered by LINKS and sent to CMP when a prescription is released from future fill (seven days prior to the earliest prescription fill date) and the prescription received date is more than 30 days prior to the fill date,1907,Batch,Runs once every day 4:30a.m,6,3,Order Status,Order Catergory,YES,LINKS,,,0,,,Client Secure channel live date-04/15/2016,,,Y,ITPR018602 - Delivery Dates Phase 1       August 2017 Major,Y,"Email, SMS(may minor), Secure (August Major)","Email/Phone/
+Text Message/Secure/Client Secure Message",,,Triggered by LINKS as part of Care SMS/Email August 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ship Consent Initial,Initial consent from member,1904,Batch,"7:00 a.m , 8:30 a.m, 10:00 a.m, 12:00 , 2:00 p.m, 4:00 p.m, 6:00 p.m , 8:00 p.m",4,3,Order Status,Order Catergory,YES,LINKS,,9962,"308,822",,,,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+August 2017 Major",Y,"Email, SMS(may minor)",Email/Text Message/Secure Message,,,Triggered by LINKS as part of Care SMS/Email June 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ship Consent Followup,Followup consent from member,1905,Batch,"7:00 a.m , 8:30 a.m, 10:00 a.m, 12:00 , 2:00 p.m, 4:00 p.m, 6:00 p.m , 8:00 p.m",5,3,Order Status,Order Catergory,YES,LINKS,,1612,"49,972",,,,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+August 2017 Major",Y,"Email, SMS(may minor)",Email/Text Message/Secure Message,,,Triggered by LINKS as part of Care SMS/Email June 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ship Consent Final,Final followup consent from member,1906,Batch,"7:00 a.m , 8:30 a.m, 10:00 a.m, 12:00 , 2:00 p.m, 4:00 p.m, 6:00 p.m , 8:00 p.m",5,3,Order Status,Order Catergory,YES,LINKS,,1536,"47,616",,,,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+August 2017 Major",Y,"Email, SMS(may minor)",Email/Text Message/Secure Message,,,Triggered by LINKS as part of Care SMS/Email June 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Doctor Hold,Notifies member when Order is Held by Doctor.,1859,Real-time,,5,3,Order Status,Order Catergory,YES,LINKS,Order Status with SMS phase 2,8258,"255,998",,Yes,8/21/2015,,Yes,,,Y,"Email, SMS(may minor)","Email/Phone/
+Text Message/Secure/Client Secure Message",,,Will be triggered by LINKS as part of Order Status Porject Aug 2015,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cannot Fill,Notifies member when Order cannot be filled (previously RTP),1861,Real-time,,5,3,Order Status,Order Catergory,YES,LINKS,Order Status with SMS phase 2,17397,"539,307",,Yes,8/21/2015,,Yes,,,Y,"Email,SMS","Email/Phone/
+Text Message/Secure/Client Secure Message",,,Will be triggered by LINKS as part of Order Status Porject Aug 2015,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RTP (Return to Participant) w/ MD Contact,Notifies a member when their order cannot be filled and we tried to contact their Doctor,1341,Real-time,,4,,Order Status,RTP Category,NO,CMP,Order Status with SMS phase 2,,0,,,,8/21/2015,,,,,,"Email/Phone/
+Text Message/Secure Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RTP (Return to Participant) w/o MD Contact,Notifies a member when their order cannot be filled but we did not reach out to their doctor,1342,Real-time,,4,,Order Status,RTP Category,NO,CMP,Order Status with SMS phase 2,,0,,,,8/21/2015,,,,,,"Email/Phone/
+Text Message/Secure Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RFM Auto Renewal ,Notifies a member when we will be reaching out to their Dr. to get a new RX as part as the ReadyFill at Mail (RFM) program,1230,Real-time,,5,3,ReadyFill @ Mail,Order Category,YES,LINKS,ITPR019067 EPID RFM Alerts Timing Modification,10587,328197,,,8/18/2017,,,Y,ITPR019067 RFM Alert Timing Modification,Y,"Email, SMS, Secure (August Major)","Email/Phone/
+Text Message/Secure Message/IVR",ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/RFM%20Auto%20Renew.xml,"* Uses Delivery Channel Preference set by the Member for Order Status alerts
+* When member is enrolled in RFM program, he cannot opt of Order Status alerts (check boxes are grayed out on Portal)
+* Member will also get copy of message in Portal Secure Message center",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RFM Auto Refill ,Notifies a member when we will be automatically refilling their Rx as part as the ReadyFill at Mail (RFM) program,1231,Real-time,,5,3,ReadyFill @ Mail,Order Category,YES,LINKS,ITPR019067 EPID RFM Alerts Timing Modification,15808,490048,,,8/18/2017,,,Y,ITPR019067 RFM Alert Timing Modification,Y,"Email, SMS, Secure (August Major)","Email/Phone/
+Text Message/Secure Message/IVR",ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/RFM%20Auto%20Refill.xml,"* Uses Delivery Channel Preference set by the Member for Order Status alerts
+* When member is enrolled in RFM program, he cannot opt of Order Status alerts (check boxes are grayed out on Portal)
+* Member will also get copy of message in Portal Secure Message center",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RFM MD Denied ,Notifies a member when their Dr. Denied our request for a new Rx as part of the ReadyFill at Mail (RFM) program,1232,Real-time,,4,,ReadyFill @ Mail,Order Category,NO,CMP,Order Status with SMS phase 2,,0,,,,8/21/2015,,,,,,"Email/Phone/
+Text Message/Secure Message",,,"* Uses Delivery Channel Preference set by the Member for Order Status alerts
+* When member is enrolled in RFM program, he cannot opt of Order Status alerts (check boxes are grayed out on Portal)
+* Member will also get copy of message in Portal Secure Message center",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RFM MD Unresponsive ,Notifies a member when their Dr. was unresponsive to our request for a new Rx as part of ReadyFill at Mail (RFM) program,1233,Real-time,,4,,ReadyFill @ Mail,Order Category,NO,CMP,Order Status with SMS phase 2,,0,,,,8/21/2015,,,,,,"Email/Phone/
+Text Message/Secure Message",,,"* Uses Delivery Channel Preference set by the Member for Order Status alerts
+* When member is enrolled in RFM program, he cannot opt of Order Status alerts (check boxes are grayed out on Portal)
+* Member will also get copy of message in Portal Secure Message center",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Refill Available Notice,Notifies a member when one or more of their Rx's is eligible for refill,260,Batch,,10,4,Refill Reminder,Refill Category,NO,LINKS,Refill Reminder Base Improvements,43195,"1,339,045",,Yes,10/16/2015,,,Y,ITPR018666  OIC - PBM - Show Rx Info Phase 1,Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,*see Reminder 2514 and Warning 2515,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Refill Expiring Notice,Notifies a member when one or more of their Rx's is about to expire but has at least 1 refill left,263,Batch,,10,4,Refill Reminder,Refill Category,NO,LINKS,Refill Reminder Base Improvements,633,"19,623",,Yes,10/16/2015,,,Y,ITPR018666  OIC - PBM - Show Rx Info Phase 1,Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,*see Reminder 2516 and Warning 2517,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Zero Refills Notice,Notifies a member when one or more of their Rx's has no more refills available,1229,Batch,,10,4,Refill Reminder,Refill Category,NO,LINKS,Refill Reminder Base Improvements,,0,All Refills 240k a month,Yes,10/16/2015,,,Y,ITPR018666  OIC - PBM - Show Rx Info Phase 1,Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,*see Reminder 2518 and Warning 2519,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Brand to Generic with Co-pay Incentive ,Notifies a member when their Brand Name Rx has a Generic alternative with a decreased co-pay,1860,Batch,,9,,EOMS,Savings Category,NO,EOMS,,,0,,,,2013,,,,,,Email,,,* Member can opt of message by calling Care,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Physician Registration Confirmation,Confirmation link sent Physician for registration confirmation,1867,Real-time,,1,2,Physician Portal Alert,Physician Portal Registration category,NO,Physician Portal,,,0,1000,No,10/16/2015,,,,,,,Email,,,Mandatory alert - Physician cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Physician Registration Success,Sent when a member is registered in Physician Portal,1869,Real-time,,5,4,Physician Portal Alert,Physician Portal Registration category,NO,Physician Portal,,,0,1000,No,10/16/2015,,,,,,,Email,,,Mandatory alert - Physician cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Physician Password Reset Request,Sent to member to reset password.,1893,Real-time,,1,1,Physician Portal Alert,Physician Portal Registration category,NO,Physician Portal,,,0,,No,10/16/2015,,,,,,,Email,,,Mandatory alert - Physician cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Shopping Cart Confirmation,Sent when a member places an order through Caremark.com,1877,Real-time,,1,1,Shopping Cart,MEMBER REGISTRATION,NO,Portal,,12547,388957,,,,,,Y,ITPR018602 - Delivery Dates Phase 1       August 2017 Major,Y,Email (August Major),Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Registration Confirmation,Sent to a member when they successfully register on Caremark.com,1870,Real-time,,8,2,Registration ,MEMBER REGISTRATION,NO,Portal,,3445,106795,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Update Profile,Sent to a member when they update their profile information on Caremark.com,1871,Real-time,,7,3,Registration ,MEMBER REGISTRATION,NO,Portal,,321,9951,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Forgot Password,Sent to a member when they request to reset their Caremark.com password,1873,Real-time,,1,1,Registration ,MEMBER REGISTRATION,NO,Portal,,3395,105245,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Username Recovery Confirmation,Sent to a member to confirm they have successfully retrieved their username,1878,Real-time,,7,2,Registration ,MEMBER REGISTRATION,NO,Portal,,705,21855,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Password Recovery Confirmation,Sent to a member to confirm they have successfully reset their password,1879,Real-time,,7,2,Registration ,MEMBER REGISTRATION,NO,Portal,,2535,78585,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Security Questions Update Confirmation,Stent a member when they update their Security Questions on Caremark.com,1880,Real-time,,8,3,Registration ,MEMBER REGISTRATION,NO,Portal,,69,2139,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Registration Confirmation,Sent to a patient hen they successfully register on the Caremark Specialty website (cvscaremarkspecialtyrx.com),1881,Real-time,,8,2,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty Portal,,86,2666,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Account Update Confirmation,"Sent to patient when they successfully reset their username, password or their security questions on the Caremark Specialty website ",1883,Real-time,,7,3,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty Portal,,12,372,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Forgot Password,Sent to a patient when they request to reset their Caremark Specialty website password,1882,Real-time,,1,1,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty Portal,,16,496,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Account Locked,Sent to  patients when their Caremark Specialty website  account is locked due to too many invalid login attempts,1884,Real-time,,1,2,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty Portal,,5,155,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Password Reset Fail,Sent to patients when an attempt to reset their Caremark Specialty website password fails,1885,Real-time,,1,2,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty Portal,,2,62,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Order Confirmation,Sent when a patient places an order through the Caremark Specialty website ,1886,Real-time,,1,1,Specialty Order Confirmation,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty Portal,,71,2201,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Explanation of Benefits (EOB),Notifies an Aetna patient when their Med D EOB is available to view online,1892,Batch,,9,4,Med D EOB,MEMBER REGISTRATION,YES,Batch Loader ,,,"60,000",,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Go Paperless,Notifies Silverscritp members to opt-in for paperless EOB,2521,Batch,,10,5,Med D EOB,MEMBER REGISTRATION,NO,CMPBatchTrigger,ITPR010616 - Med D EOB,,0,380820,,11/20/2015,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PBM Quick Registration,Sent when member contacts Care and requests registration assistance.  Alert contains a link for the member to register at Caremark.com.  Link expires in 24 hours.  Link will bring member to registration page with some member information already filled in .,1887,Real-time,,1,1,Registration ,MEMBER REGISTRATION,NO,Portal,,3303,102393,,,,,,,,,,Email/SMS,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PBM Quick Registration Follow-up,Sent after the expiration of the initial Quick Registration alert URL link.  A new registration link will be included in this alert.,1888,Real-time,,6,5,Registration ,MEMBER REGISTRATION,NO,Portal,,1445,44795,,,,,,,,,,Email,,,Mandatory alert - member cannot opt out,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PBM Quick Registration Second Follow-up,A second follow-up alert will be created for QR.  The wait time before sending the first follow-up is increased from 24 to 72 hours.  Wait time for the second is also 72 hours.  This will only be available in the email channel.,2502,Real-time,,1,5,Registration ,TBD,NO,Portal,,,,,,8/21/2015,,,,,,,Email,,,New alert that will be triggered part of Expanded Quick Reg Aug 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Manual Registration Abandon ,Purpose of this alert is to remind the member to complete their registration on Caremark.com.  The assumption is that Portal was able to capture the member’s internal ID and email address during the unsuccessful registration process,2505,Real-time,,9,4,Registration ,Registration ,NO,Notification Platform,ITPR012032 - Expanded Quick Registration Release 2,,,,,10/16/2015,TBD,,,,,,Email,,,New alert that will be triggered part of Expanded Quick Reg Oct 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Manual Registration Abandon Follow-up ,"This alert is sent after 72 hours if no response from member on the Manual Registration Abandon alert.  Similar to the existing QR follow-up alert, this will also be triggered automatically",2506,Real-time,,9,4,Registration ,Registration ,NO,Notification Platform,ITPR012032 - Expanded Quick Registration Release 2,,,,,10/16/2015,TBD,,,,,,Email,,,New alert that will be triggered part of Expanded Quick Reg Oct 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Recovery Winback,Recovery Winback email is sent to members who tried to recover their username or password but does not log in to Portal within 24 hours.  This will be available only in email and no follow-up alerts,2507,Real-time,,9,5,Registration ,Registration ,NO,Notification Platform,ITPR012032 - Expanded Quick Registration Release 2,,,,,10/16/2015,,,,,,,Email,,,New alert that will be triggered part of Expanded Quick Reg Oct 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Portal Reactivation Winback,Scenario for this alert is members with maintenance prescriptions who have not logged in to Portal for more than six months.  Care reps will have ability to select between ,2503,Real-time,,1,1,Registration ,TBD,NO,Portal,,,,,,8/21/2015,TBD ,,,,,,Email/SMS,,,New alert that will be triggered part of Expanded Quick Reg Aug 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Portal Reactivation Winback Followup,"
+After sending the first alert and no response from member, the follow-up alert will be sent.  This will only be available via the email channel and will also be triggered automatically
+",2504,Real-time,,1,5,Registration ,TBD,NO,Portal,,,,,,8/21/2015,,,,,,,Email,,,New alert that will be triggered part of Expanded Quick Reg Aug 2015 release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+New Member Quick Registration,This email is sent to the new Member which are in System but did complete the Registration. Quick Registration link is included in the Welcome/DTD emails sent to new members as part of Member Experience campaigns that clients opt-in to receive.,2522,Batch,,10,5,Registration ,Registration,NO,Notification Platform,ITPR012981 - Expanded Quick Registration Release 3,,,,,8/21/2015,TBD,,,,,,Email,,,New alert that will be triggered part of Expanded Quick reg Nov Release 2015,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+New Member Quick Registration Follow-up,This is a followup email .The number of follow-up Welcome Email with Quick Registration link shall be same as number of follow-up emails sent with manually triggered Quick Registration email by Care Rep.,2523,Batch,,10,5,Registration ,Registration,NO,Notification Platform,ITPR012981 - Expanded Quick Registration Release 3,,,,,8/21/2015,TBD,,,,,,Email,,,New alert that will be triggered part of Expanded Quick reg Nov Release 2015,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Early Registration Confirmation Follow-up Alert,A second follow-up alert will be created for Early Registration. The wait time before sending the follow-up is ten days from the day the Member registered on Portal via Early Registration if the Member doesn’t log on to Caremark.com since then. This will only be available via email. This alert will have a new Source ID which will be sent by Notification Platform in the request,2509,Real-time,,7,5,Registration ,Registration,NO,Notification Platform,ITPR011281 - Early Registration,,,"12000 Avg
+80000 Peak (Welcome season)",,10/16/2015,TBD,,,,,,Email,,,New alert that will be triggered as part of Early Registration.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Plan Effective Date Notification,Purpose of this alert is to inform the Member who have registered on Caremark.com via Early Registration that their plan has become active. This alert will only be available via email. This alert will have a new Source ID which will be sent by Notification Platform in the request,2510,Real-time,,7,4,Registration ,Registration,NO,Notification Platform,ITPR011281 - Early Registration,,,"20,000 Avg
+100,000 Peak (Welcome season)",,10/16/2015,TBD,,,,,,Email,,,New alert that will be triggered as part of Early Registration.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Plan Effective Date Notification Reminder,A second follow-up alert will be created for Members who have registered on Caremark.com via Early Registration and their plan has become effective. This alert is sent after 10 days from the day the initial Plan Effective Date Notification email alert was sent and if the Member hasn’t logged on to Caremark.com since then. This alert will have a new Source ID which will be sent by Notification Platform in the request.,2511,Real-time,,7,5,Registration ,Registration,NO,Notification Platform,ITPR011281 - Early Registration,,,"12000 Avg
+80000 Peak (Welcome season)",,10/16/2015,TBD,,,,,,Email,,,New alert that will be triggered as part of Early Registration.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ICE Order confirmation Email,CMP to send the ICE Order Confirmation alert to the member that will be triggered to CMP by the ICE application.  Whichever client that has access to the mobile app will receive this alert to confirm their online order.  This will be available only in the email channel,2508,Real-time,,1,1,Registration ,Registration,NO,ICE System,ICE Release 4,,,"220,000-300,000",,10/16/2015,,,Y,ITPR018602 - Delivery Dates Phase 1       August 2017 Major,Y,Email (August Major),Email,,,New alert that will be triggered by ICE System using DBPL services.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Welcome Message,Sent when a patient/member opts to receive CVS Caremark Specialty Pharmacy prescription alerts.,1889,Real-time,,4,1,Specialty Welcome ,Specialty Order Category,NO,Specialty Systems,,2766,85746,,,,,,,,,,Email,,,"Mandatory alert - member cannot opt out of receiving
+Text Messages are delivered via Digital 
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Ready for Refill,Notifies a Specialty patient/member when one or more of their Rx's is available for refill,1890,Real-time,,6,4,Specialty Refill Reminder,Specialty Order Category,NO,Specialty Systems,,1424,44144,,,10/16/2015,,,,,,,Email,,,Text Messages are delivered via Digital,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Order Shipped,Notifies a Specialty patient/member when their order is shipped,1891,Real-time,,3,2,Specialty Order Status/Order Shipped,Specialty Order Category,NO,Specialty Systems,,3556,110236,,,10/16/2015,,,,,,,Email,,,Text Messages are delivered via Digital,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Order Delayed,Notify delay in Order  due to uncircumstances occurrence,1862,Real-time,,6,3,Specialty Order status,Specialty Order Category,NO,Specialty ,ITPR009653 - Specialty Order Status Message,,0,,,,,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Contact Us,Notify member on refill reminders information required due to physician not responded and more information required,1863,Real-time,,6,3,Specialty Order status,Specialty Order Category,NO,Specialty ,ITPR009653 - Specialty Order Status Message,,0,,,,,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Quick Reg,A new email alert that will allow members to register in to Specialty Portal.,2512,Real-time,,1,1,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty ,ITPR010717 - Specialty Quick Registration ,,0,"4000 Avg
+20,000 Peak (Mon & Thursday)",,10/16/2015,,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Quick Reg Follow up,A new email alert that will be automatically sent if the member did not respond to the initial SQR email after 24 hours.  ,2513,Real-time,,1,5,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty ,ITPR010717 - Specialty Quick Registration ,,0,"3000 Avg
+14,000 Peak (Mon & Thursday)",,10/16/2015,,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Balance Due,Notify Member when they have a Balance Due,2500,Real-time,,6,3,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty ,ITPR009652 Digital Specialty Online Payment,,,,,10/16/2015,,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty Payment Scheduled,Notify Member when their payment is scheduled,2501,Real-time,,1,2,Specialty Registration,"DIGITAL
+SPECIALTY PORTAL
+",NO,Specialty ,ITPR009652 Digital Specialty Online Payment,,,,,10/16/2015,,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Refill Available Reminder,Notifies a member when one or more of their Rx's is eligible for refill,2514,Batch,,10,4,Refill Reminder,Refill Category,No,LINKS,Refill Reminder Base Improvements,,0,,Yes,"10/16/2015
+Client Secure channel live date-04/15/2016",,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Refill Available Warning,Notifies a member when one or more of their Rx's is eligible for refill,2515,Batch,,10,4,Refill Reminder,Refill Category,No,LINKS,Refill Reminder Base Improvements,,0,,Yes,"10/16/2015
+Client Secure channel live date-04/15/2016",,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Refill Expiring Reminder,Notifies a member when one or more of their Rx's is about to expire but has at least 1 refill left,2516,Batch,,10,4,Refill Reminder,Refill Category,No,LINKS,Refill Reminder Base Improvements,,0,,Yes,"10/16/2015
+Client Secure channel live date-04/15/2016",,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Refill Expiring Warning,Notifies a member when one or more of their Rx's is about to expire but has at least 1 refill left,2517,Batch,,10,4,Refill Reminder,Refill Category,No,LINKS,Refill Reminder Base Improvements,,0,,Yes,"10/16/2015
+Client Secure channel live date-04/15/2016",,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Zero Refills Reminder,Notifies a member when one or more of their Rx's has no more refills available,2518,Batch,,10,4,Refill Reminder,Refill Category,No,LINKS,Refill Reminder Base Improvements,,0,,Yes,"10/16/2015
+Client Secure channel live date-04/15/2016",,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Zero Refills Warning,Notifies a member when one or more of their Rx's has no more refills available,2519,Batch,,10,4,Refill Reminder,Refill Category,No,LINKS,Refill Reminder Base Improvements,,0,,Yes,"10/16/2015
+Client Secure channel live date-04/15/2016",,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,Twoway SMS,"Email/Phone/
+Text Message/Secure/Client Secure Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Invite Staff,Sends email to Physician Staff to join portal,1864,Real-time,,2,2,Physician Portal Alert,Physician Portal Registration category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,0,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Invite Physician,Sends email to Physicians to join portal,1865,Real-time,,2,2,Physician Portal Alert,Physician Portal Registration category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-High Alert ,A high alert mail or text from physician portal to physician or staff,1894,Real-time,,1,1,Physician Portal Alert,Physician Portal Account category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email/Text Message,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Invite Reminder,Invitation reminder send to physician to join portal,1866,Real-time,,2,4,Physician Portal Alert,Physician Portal Registration category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Account Updated,"Email to phyician stating that something on their account was updated , like email",1896,Real-time,,5,3,Physician Portal Alert,Physician Portal Account category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Connection Request,Connection request sent from one physician to another ,1897,Real-time,,2,2,Physician Portal Alert,Physician Portal Connection category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Connection Granted,Connection confirmation sent from one physician to another ,1898,Real-time,,3,3,Physician Portal Alert,Physician Portal Connection category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Connection Denied,Connection denied sent from one physician to another ,1899,Real-time,,3,3,Physician Portal Alert,Physician Portal Connection category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Portal Admin Notice,A person assigned as physician portal adminstrator within a hospital gets this email,1895,Real-time,,2,2,Physician Portal Alert,Physician Portal Account category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MD Alert-Reset Security,An email stating that physician/user can reset their security question by following link in email.,2520,Real-time,,1,1,Physician Portal Alert,Physician Portal Account category,No,Physician Portal,ITPR010783_Physician Portal R2,,0,,No,10/16/2015,Jul-17,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ScriptSync Enrollment,Notifies member of ScriptSync Enrollment Confirmation,2525,Real-time,,9,4,Order Status,Order Catergory,YES,LINKS,ScriptSync At Mail,, ,,Yes,2/19/2016,,,,,,,"Email/Phone/
+Text Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ScriptSync Disnrollment,Notifies member of ScriptSync Disenrollment Confirmation,2526,Real-time,,9,4,Order Status,Order Catergory,YES,LINKS,ScriptSync At Mail,, ,,Yes,2/19/2016,,,,,,,"Email/Phone/
+Text Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ScriptSync FTC Communication,Notifies member of ScriptSync Auto Refill and Auto Renewals,2527,Real-time,,2,3,Order Status,Order Catergory,YES,LINKS,ScriptSync At Mail,, ,,Yes,2/19/2016,,,,,,,"Email/Phone/
+Text Message",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Specialty PhotoFill,An email alert for Specialty Members who have submitted Photo Rx for both New and Transfer prescriptions via Specialty Mobile App,2532,Real-time,,1,1,Spcialty,Specialty Order Category,No,Specialty Mobile App,ITPR013338 Specialty Mobile Photo Rx,,,"1000-10,000k",No,8/19/2016,,,,,,,Email,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+RFM Disenrollment Alert,"RFM Disenrollment to send to the member when the drug is no longer enrolled within the RFM program using one of the below valid (or a combination of the below if the preferred delivery channel is invalid) CMP delivery channels:
+
+• Email
+• SMS
+• Outbound IVR
+• Secure Messaging (cannot be selected on its own; can only be sent in conjuction with one of the above delivery channels)
+",3040,Real-time,,5,,LINKS Alert,Order Status,,LINKS,ITPR019067 EPID RFM Alerts Timing Modification,,,22k - 100k,Yes,8/18/2017,,,Y,ITPR019067 RFM Alert Timing Modification,Y,"Email, SMS, Secure (August Major)","Email/Phone/
+Text Message/Secure Message/IVR",ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/RFM%20Disenrollment.xml,IVR is not processed via ECCM.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ADT Med D OFF THERAPY,HEE Trigger ADT Med D Off therapy to targeted members to be notified with drugs due.,2529,Batch,,,low,HEE Alert,Refill Reminder,,HEE/CMT,PAM Phase 2,,,100K per month ,Yes,NA,,,Y,ITPR015458- PAM Phase 2,Y,"Email, SMS, Secure",Email/Text Message/Secure,ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/ADT%20Med%20D%20Off%20Therapy.xml,IVR is not processed via ECCM.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ADT Med D STARS OFF THERAPY,HEE Trigger ADT Med D STARS Off therapy to targeted members to be notified with drugs due.,2530,Batch,,,low,HEE Alert,Refill Reminder,,HEE/CMT,PAM Phase 2,,,100K per month ,Yes,NA,,,Y,ITPR015458- PAM Phase 2,Y,"Email, SMS, Secure",,ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/ADT%20Med%20D%20STARS%20Off%20Therapy.xml,IVR is not processed via ECCM.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ADT Med D STARS REFILL REMINDER,HEE Trigger ADT Med D STARS Refill Reminder to targeted members to be notified drugs refills.,2531,Batch,,,low,HEE Alert,Refill Reminder,,HEE/CMT,PAM Phase 2,,,100K per month ,Yes,NA,,,Y,ITPR015458- PAM Phase 2,Y,"Email, SMS, Secure",,ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/ADT%20Med%20D%20STARS%20Refill%20Reminder.xml,IVR is not processed via ECCM.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Preference Migration Notification,One-time alert to notify member when Refill Reminder preferences are migrated,2524,Batch,,10,5,"ONE TIME ALERTS
+",One Time Alerts Category,,DMP,Refill Reminder Increased Awareness and Adoption,,0,"60,000",Yes,11/20/2015,TBD,,,,,,Email/Text Message,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Order Shipped Consolidation,Notifies a member when their order is shipped,264,Real-time,,,2,Order Status,Order Catergory,NO,LINKS,RxShip Consolidation ,,,,Yes,Oct Major 2017,,,Y,ITPR020933 RxShip Consolidation,Y,"Email,SMS, Secure ",Email/SMS/IVR/Secure,ECCM.MSG.REQUEST,http://sharepoint/sites/ccms/MIC/MIC%20Products%20Knowledge%20Base/ECCM%20Environment%20Support/Lower%20Environment%20Test%20XML/OrderShippedConsolidated.txt,"Links will trigger consolidated order to ECCM for all the channel.
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Two Way Refill and Renewal Reminder,"The 9 Refill Reminders alerts for SMS channel in the past 24 hrs are cascaded by beneficiary id and delivery address. The initial 2 Way SMS message sent displays the first Rx#'s abbreviated drug name in the series for the members to respond YES, NO, STOP, HELP to initiate/ not initiate refill process",10001,Batch,Runs once every day 5:00pm ,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Two Way Refill and Renewal Reminder YES Confirmation,When the member responds YES to any Rx# in the series,10002,Real-time,,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Two Way Refill and Renewal Reminder NO Confirmation,When the member responds NO to any Rx# in the series,10003,Real-time,,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Two Way Refill and Renewal Final YES Confirmation,When the member responds YES to the final Rx# in the series,10004,Real-time,,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Two Way Refill and Renewal Final NO Confirmation,When the member responds NO to the final Rx# in the series,10005,Real-time,,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Refill and Renewal Reminder,Members will receive 1 Way SMS when the default payment account is null in LINKS and client pref is 1 WAY,10006,Batch,Runs once every day 5:00pm ,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SMS Invalid Response,"When the member responds anything else other than YES, NO, STOP and HELP",10007,Real-time,,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SMS Stop Response,When the member responds STOP,10008,Real-time,,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SMS Help Response,When the member responds HELP,10009,Real-time,,,4,Refill Reminder,Refill Category,NO,LINKS,IPR016611 - 2 Way SMS Refills,,,,No,Oct Major 2016,,,Y,"ITPR018666  OIC - PBM - Show Rx Info Phase 1
+Aug 2017 Major",Y,SMS,,ECCM.MSG.ENCRYPT.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SilverScript Acknowledgement Email,ODS will send a file with members' information who opted into Digital WelcomeKit indicator on SilverScript portal.  ECCM will process the file through a batch job and sends Acknowledgement emails to members.,2538,Batch,,,3,,,,SilverScript,ITPR022431 SilverScript Welcome Kits,,,,,Feb Major 2018,,,,,,,,ECCM.MSG.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SilverScript WelcomeKit Email,ODS will send a file with members' information who completed the enrollment. ECCM will process the file through a batch job and sends WelcomeKit emails to members.,2539,Batch,,,3,,,,SilverScript,ITPR022431 SilverScript Welcome Kits,,,,,Feb Major 2018,,,,,,,,ECCM.MSG.REQUEST,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+* Member can elect to receive a copy of the message in the Secure Message center.  He must have another delivery channel selected - he cannot only get secure messages.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LEGEND,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CMP Alerts,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+DMP Alerts,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TBD in Future Release,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
