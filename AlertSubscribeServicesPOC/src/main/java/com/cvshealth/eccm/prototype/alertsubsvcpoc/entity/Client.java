@@ -1,11 +1,16 @@
 package com.cvshealth.eccm.prototype.alertsubsvcpoc.entity;
 
 import java.io.Serializable;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
@@ -23,6 +28,16 @@ public class Client implements Serializable {
 	private String code;
 	private String name;
 	
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="client")
+	@JsonIdentityReference(alwaysAsId = true)
+	private Set<ClientConfiguration> clientConfiguration;
+	
+	public Set<ClientConfiguration> getClientConfiguration() {
+		return clientConfiguration;
+	}
+	public void setClientConfiguration(Set<ClientConfiguration> clientConfiguration) {
+		this.clientConfiguration = clientConfiguration;
+	}
 	
 	public int getId() {
 		return id;

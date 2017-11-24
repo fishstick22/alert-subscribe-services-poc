@@ -34,6 +34,24 @@ public class Communication implements Serializable {
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="communication")
 	@JsonIdentityReference(alwaysAsId = true)
 	private Set<ProgramConfiguration> programConfiguration;
+
+	public Set<ProgramConfiguration> getProgramConfiguration() {
+		return programConfiguration;
+	}
+	public void setProgramConfiguration(Set<ProgramConfiguration> programConfiguration) {
+		this.programConfiguration = programConfiguration;
+	}
+	
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="communication")
+	@JsonIdentityReference(alwaysAsId = true)
+	private Set<ClientConfiguration> clientConfiguration;
+	
+	public Set<ClientConfiguration> getClientConfiguration() {
+		return clientConfiguration;
+	}
+	public void setClientConfiguration(Set<ClientConfiguration> clientConfiguration) {
+		this.clientConfiguration = clientConfiguration;
+	}
 	
 	public int getId() {
 		return id;
@@ -53,12 +71,5 @@ public class Communication implements Serializable {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Set<ProgramConfiguration> getProgramConfiguration() {
-		return programConfiguration;
-	}
-	public void setProgramConfiguration(Set<ProgramConfiguration> programConfiguration) {
-		this.programConfiguration = programConfiguration;
-	}
-	
 	
 }

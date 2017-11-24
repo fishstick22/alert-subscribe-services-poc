@@ -51,13 +51,27 @@ public class ProgramConfiguration implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name="program_id", nullable=false)
-	//@JsonIdentityReference(alwaysAsId = true)
+	@JsonIdentityReference(alwaysAsId = true)
 	private Program program;	// DB FK
+
+	public Program getProgram() {
+		return program;
+	}
+	public void setProgram(Program program) {
+		this.program = program;
+	}
 
 	@ManyToOne
 	@JoinColumn(name="communication_id", nullable=false)
-	//@JsonIdentityReference(alwaysAsId = true)
+	@JsonIdentityReference(alwaysAsId = true)
 	private Communication communication;	// DB FK
+	
+	public Communication getCommunication() {
+		return communication;
+	}
+	public void setCommunication(Communication communication) {
+		this.communication = communication;
+	}
 	
 	public int getId() {
 		return id;
@@ -125,16 +139,5 @@ public class ProgramConfiguration implements Serializable {
 	public void setExpiration(Date expiration) {
 		this.expiration = expiration;
 	}
-	public Program getProgram() {
-		return program;
-	}
-	public void setProgram(Program program) {
-		this.program = program;
-	}
-	public Communication getCommunication() {
-		return communication;
-	}
-	public void setCommunication(Communication communication) {
-		this.communication = communication;
-	}
+
 }

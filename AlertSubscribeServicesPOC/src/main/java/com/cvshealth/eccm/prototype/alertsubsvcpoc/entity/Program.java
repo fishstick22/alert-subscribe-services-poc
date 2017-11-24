@@ -32,6 +32,13 @@ public class Program implements Serializable {
 	@JsonIdentityReference(alwaysAsId = true)
 	private Set<ProgramConfiguration> programConfiguration;
 	
+	public Set<ProgramConfiguration> getProgramConfiguration() {
+		return programConfiguration;
+	}
+	public void setProgramConfiguration(Set<ProgramConfiguration> programConfiguration) {
+		this.programConfiguration = programConfiguration;
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -50,10 +57,5 @@ public class Program implements Serializable {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Set<ProgramConfiguration> getProgramConfiguration() {
-		return programConfiguration;
-	}
-	public void setProgramConfiguration(Set<ProgramConfiguration> programConfiguration) {
-		this.programConfiguration = programConfiguration;
-	}
+
 }

@@ -12,10 +12,16 @@ import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
-@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope = ProgramConfiguration.class)
+//@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope = ProgramConfiguration.class)
+@JsonIdentityInfo(
+		generator=ObjectIdGenerators.PropertyGenerator.class, 
+		property="id",
+		resolver = EntityIdResolver.class,
+		scope = ClientConfiguration.class)
 public class ClientConfiguration implements Serializable {
 
 	/**
@@ -42,10 +48,12 @@ public class ClientConfiguration implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name="client_id", nullable=false)
+	@JsonIdentityReference(alwaysAsId = true)
 	private Client client;	// DB FK
 
 	@ManyToOne
 	@JoinColumn(name="communication_id", nullable=false)
+	@JsonIdentityReference(alwaysAsId = true)
 	private Communication communication;	// DB FK
 
 	public int getId() {
