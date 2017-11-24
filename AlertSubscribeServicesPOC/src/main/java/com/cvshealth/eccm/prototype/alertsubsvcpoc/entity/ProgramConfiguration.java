@@ -18,7 +18,12 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 //https://dzone.com/articles/circular-dependencies-jackson
 @Entity
 //https://stackoverflow.com/questions/15422838/jsonmappingexception-already-had-pojo-for-id
-@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope = ProgramConfiguration.class)
+//https://stackoverflow.com/questions/44007188/deserialize-json-with-spring-unresolved-forward-references-jackson-exception
+@JsonIdentityInfo(
+		generator=ObjectIdGenerators.PropertyGenerator.class, 
+		property="id",
+		resolver = EntityIdResolver.class,
+		scope = ProgramConfiguration.class)
 public class ProgramConfiguration implements Serializable {
 
 	/**

@@ -41,7 +41,13 @@ INSERT INTO `communication` (`id`, `name`, `description`) VALUES
 	 (1859, 'Doctor Hold', 'Notifies member when Order is Held by Doctor.'),
 	 (1861, 'Cannot Fill', 'Notifies member when Order cannot be filled (previously RTP)'),
 	 (1341, 'RTP (Return to Participant) w/ MD Contact', 'Notifies a member when their order cannot be filled and we tried to contact their Doctor'),
-	 (1342, 'RTP (Return to Participant) w/o MD Contact', 'Notifies a member when their order cannot be filled but we did not reach out to their doctor')
+	 (1342, 'RTP (Return to Participant) w/o MD Contact', 'Notifies a member when their order cannot be filled but we did not reach out to their doctor'),
+	 (2514, 'Refill Available Reminder', 'Notifies a member when one or more of their Rx\'s is eligible for refill'),
+	 (2515, 'Refill Available Warning', 'Notifies a member when one or more of their Rx\'s is eligible for refill'),
+	 (2516, 'Refill Expiring Reminder', 'Notifies a member when one or more of their Rx\'s is about to expire but has at least 1 refill left'),
+	 (2517, 'Refill Expiring Warning', 'Notifies a member when one or more of their Rx\'s is about to expire but has at least 1 refill left'),
+	 (2518, 'Zero Refills Reminder', 'Notifies a member when one or more of their Rx\'s has no more refills available'),
+	 (2519, 'Zero Refills Warning', 'Notifies a member when one or more of their Rx\'s has no more refills available')
 ;
 INSERT INTO `client` (`id`, `code`, `name`) VALUES 
 	 (10203, 'BCBSN', 'BLUE CROSS BLUE SHIELD OF NC'),
