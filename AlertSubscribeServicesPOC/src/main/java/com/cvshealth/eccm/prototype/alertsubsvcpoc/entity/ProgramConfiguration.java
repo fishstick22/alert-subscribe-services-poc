@@ -48,7 +48,6 @@ public class ProgramConfiguration implements Serializable {
 	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date expiration;
 	
-	
 	@ManyToOne
 	@JoinColumn(name="program_id", nullable=false)
 	@JsonIdentityReference(alwaysAsId = true)

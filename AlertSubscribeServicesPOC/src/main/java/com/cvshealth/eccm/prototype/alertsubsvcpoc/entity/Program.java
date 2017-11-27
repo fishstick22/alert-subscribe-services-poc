@@ -29,9 +29,20 @@ public class Program implements Serializable {
 	private String description;
 	
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="program")
+	// @JsonIdentityReference(alwaysAsId = true)
+	private Set<ProgramProfile> programProfile;
+	
+	public Set<ProgramProfile> getProgramProfile() {
+		return programProfile;
+	}
+	public void setProgramProfile(Set<ProgramProfile> programProfile) {
+		this.programProfile = programProfile;
+	}
+	
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="program")
 	@JsonIdentityReference(alwaysAsId = true)
 	private Set<ProgramConfiguration> programConfiguration;
-	
+
 	public Set<ProgramConfiguration> getProgramConfiguration() {
 		return programConfiguration;
 	}
