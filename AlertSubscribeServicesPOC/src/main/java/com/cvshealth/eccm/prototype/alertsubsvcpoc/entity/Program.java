@@ -15,7 +15,11 @@ import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
-@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope = Program.class)
+@JsonIdentityInfo(
+		generator=ObjectIdGenerators.PropertyGenerator.class, 
+		property="id",
+		resolver = EntityIdResolver.class,
+		scope = Program.class)
 public class Program implements Serializable {
 
 	/**
