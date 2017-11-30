@@ -38,15 +38,15 @@ public class ProgramController {
 	}
 	
 	@RequestMapping(value= "/program", method = RequestMethod.POST)
-	public ResponseEntity<Void> addProgram(@RequestBody Program program, UriComponentsBuilder builder) {
+	public ResponseEntity<Program> addProgram(@RequestBody Program program, UriComponentsBuilder builder) {
         HttpHeaders headers = new HttpHeaders();
 		boolean flag = programService.addProgram(program);
         if (flag == false) {
-        	return new ResponseEntity<Void>(headers, HttpStatus.CONFLICT);
+        	return new ResponseEntity<Program>(program, headers, HttpStatus.CONFLICT);
         }
 
         headers.setLocation(builder.path("/program/{id}").buildAndExpand(program.getId()).toUri());
-        return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
+        return new ResponseEntity<Program>(program, headers, HttpStatus.CREATED);
 	}
 	
 	@RequestMapping(value="/program/{id}", method = RequestMethod.PUT )
