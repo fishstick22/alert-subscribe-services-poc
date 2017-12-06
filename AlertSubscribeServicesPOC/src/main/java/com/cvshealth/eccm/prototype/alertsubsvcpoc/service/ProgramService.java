@@ -29,6 +29,7 @@ public class ProgramService implements IProgramService {
 	public boolean addProgram(Program program) {
 		if (programDAO.existsByName(program.getName())) {
 			//logger.debug("addPerson " + person.getName() + " already Exists!");
+			// TODO add logging and probably throw a custom exception like DuplicateProgramException
 			return false;
 		} else {
 			programDAO.save(program);

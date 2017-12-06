@@ -42,6 +42,17 @@ public class Program implements Serializable {
 	public void setProgramProfile(Set<ProgramProfile> programProfile) {
 		this.programProfile = programProfile;
 	}
+
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="program")
+	// @JsonIdentityReference(alwaysAsId = true)
+	private Set<ProgramProfileClientException> programProfileClientException;
+	
+	public Set<ProgramProfileClientException> getProgramProfileClientException() {
+		return programProfileClientException;
+	}
+	public void setProgramProfileClientException(Set<ProgramProfileClientException> programProfileClientException) {
+		this.programProfileClientException = programProfileClientException;
+	}
 	
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="program")
 	@JsonIdentityReference(alwaysAsId = true)

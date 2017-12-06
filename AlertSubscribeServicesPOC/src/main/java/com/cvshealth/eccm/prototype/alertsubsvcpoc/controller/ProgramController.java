@@ -42,7 +42,7 @@ public class ProgramController {
         HttpHeaders headers = new HttpHeaders();
 		boolean flag = programService.addProgram(program);
         if (flag == false) {
-        	return new ResponseEntity<Program>(program, headers, HttpStatus.CONFLICT);
+        	return new ResponseEntity<Program>(null, headers, HttpStatus.CONFLICT);
         }
 
         headers.setLocation(builder.path("/program/{id}").buildAndExpand(program.getId()).toUri());

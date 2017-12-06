@@ -14,8 +14,12 @@ import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
-@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope = Program.class)
-
+//@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id", scope = Program.class)
+@JsonIdentityInfo(
+		generator=ObjectIdGenerators.PropertyGenerator.class, 
+		property="id",
+		resolver = EntityIdResolver.class,
+		scope = Client.class)
 public class Client implements Serializable {
 
 	/**
@@ -27,6 +31,17 @@ public class Client implements Serializable {
 	private int id;
 	private String code;
 	private String name;
+
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="client")
+	// @JsonIdentityReference(alwaysAsId = true)
+	private Set<ProgramProfileClientException> programProfileClientException;
+	
+	public Set<ProgramProfileClientException> getProgramProfileClientException() {
+		return programProfileClientException;
+	}
+	public void setProgramProfileClientException(Set<ProgramProfileClientException> programProfileClientException) {
+		this.programProfileClientException = programProfileClientException;
+	}
 	
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="client")
 	@JsonIdentityReference(alwaysAsId = true)

@@ -50,12 +50,28 @@ public class ClientConfiguration implements Serializable {
 	@JoinColumn(name="client_id", nullable=false)
 	@JsonIdentityReference(alwaysAsId = true)
 	private Client client;	// DB FK
+	
+	public Client getClient() {
+		return client;
+	}
 
+	public void setClient(Client client) {
+		this.client = client;
+	}
+	
 	@ManyToOne
 	@JoinColumn(name="communication_id", nullable=false)
 	@JsonIdentityReference(alwaysAsId = true)
 	private Communication communication;	// DB FK
 
+	public Communication getCommunication() {
+		return communication;
+	}
+
+	public void setCommunication(Communication communication) {
+		this.communication = communication;
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -144,19 +160,4 @@ public class ClientConfiguration implements Serializable {
 		this.expiration = expiration;
 	}
 
-	public Client getClient() {
-		return client;
-	}
-
-	public void setClient(Client client) {
-		this.client = client;
-	}
-
-	public Communication getCommunication() {
-		return communication;
-	}
-
-	public void setCommunication(Communication communication) {
-		this.communication = communication;
-	}
 }

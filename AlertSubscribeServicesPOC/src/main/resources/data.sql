@@ -38,6 +38,18 @@ INSERT INTO `client` (`id`, `code`, `name`) VALUES
 	 (339, 'BCAL', 'BLUE CROSS OF ALABAMA'),
 	 (428, 'BOH', 'BLUE CROSS OF OHIO')
 ;
+INSERT INTO `program_profile_client_exception` ( --id auto generated
+     `default_opt_in`, 
+        `visible_in_ui`, 
+           `chan_email`, 
+              `chan_ivr`, 
+                 `chan_sms`, 
+                    `chan_secure`, 
+                       `chan_mail`, 
+                          `chan_mobile`, 
+                              `effective`, `expiration`, program_id, client_id) VALUES
+     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 1, 142)
+;
 INSERT INTO `client_configuration` 
      (`name`, `description`, 
         `chan_email_priority`, 
