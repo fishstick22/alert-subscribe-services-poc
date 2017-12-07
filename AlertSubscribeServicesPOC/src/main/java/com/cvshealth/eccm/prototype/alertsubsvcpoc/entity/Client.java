@@ -33,7 +33,7 @@ public class Client implements Serializable {
 	private String name;
 
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="client")
-	// @JsonIdentityReference(alwaysAsId = true)
+	@JsonIdentityReference(alwaysAsId = true)
 	private Set<ProgramProfileClientException> programProfileClientException;
 	
 	public Set<ProgramProfileClientException> getProgramProfileClientException() {
