@@ -65,7 +65,7 @@ public class ProgramProfileClientException implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name="client_id", nullable=false)
-	@JsonIdentityReference(alwaysAsId = true)
+	// @JsonIdentityReference(alwaysAsId = true)
 	private Client client;	// DB FK
 	
 	public Client getClient() {

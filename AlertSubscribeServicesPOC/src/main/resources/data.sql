@@ -6,7 +6,8 @@ INSERT INTO `communication` (`id`, `name`, `description`) VALUES
 
 ;
 INSERT INTO `program` (`id`, `name`, `description`) VALUES
-     (1, 'Prescription Alerts', 'PBM Communications including Order Status and Refill Reminder alerts')
+     (101, 'Prescription Alerts', 'PBM Communications including Order Status and Refill Reminder alerts'),
+     (102, 'Non-Prescription Alerts', 'PBM non-transactional Communications like Portal Registration, Password Recovery')
 ;
 INSERT INTO `program_profile` ( --id auto generated
      `default_opt_in`, 
@@ -18,7 +19,8 @@ INSERT INTO `program_profile` ( --id auto generated
                        `chan_mail`, 
                           `chan_mobile`, 
                               `effective`, `expiration`, program_id) VALUES
-     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 1 )
+     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 101 ),
+     (0, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 102 )
 ;
 INSERT INTO `program_configuration` 
      (`name`, `description`, 
@@ -30,7 +32,7 @@ INSERT INTO `program_configuration`
                         `chan_mandatory`, `effective`, `expiration`, 
                         `program_id`, `communication_id`) VALUES
      ('Prescription Alerts Order Status', 'Order Status Program-level Configuration', 
-         2, 3, 1, 0, 0, 'Email', '2017-1-1', '9999-12-31', 1, 261)
+         2, 3, 1, 0, 0, 'Email', '2017-1-1', '9999-12-31', 101, 261)
 ;
 INSERT INTO `client` (`id`, `code`, `name`) VALUES 
 	 (142, 'AMD', 'AT&T INC.'),
@@ -48,7 +50,7 @@ INSERT INTO `program_profile_client_exception` ( --id auto generated
                        `chan_mail`, 
                           `chan_mobile`, 
                               `effective`, `expiration`, program_id, client_id) VALUES
-     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 1, 142)
+     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 101, 142)
 ;
 INSERT INTO `client_configuration` 
      (`name`, `description`, 

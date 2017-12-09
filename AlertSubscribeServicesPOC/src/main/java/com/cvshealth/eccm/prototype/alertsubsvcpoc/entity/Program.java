@@ -44,7 +44,7 @@ public class Program implements Serializable {
 	}
 
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="program")
-	// @JsonIdentityReference(alwaysAsId = true)
+	@JsonIdentityReference(alwaysAsId = true)
 	private Set<ProgramProfileClientException> programProfileClientException;
 	
 	public Set<ProgramProfileClientException> getProgramProfileClientException() {
