@@ -41,7 +41,9 @@ public class ProgramConfiguration implements Serializable {
 	private int chanSmsPriority;
 	private int chanMailPriority;
 	private int chanMobilePriority;
-	private String chanMandatory;
+	private String chanDefault;
+	private boolean required;
+	private boolean mandatory;
 	
 	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date effective;
@@ -120,11 +122,23 @@ public class ProgramConfiguration implements Serializable {
 	public void setChanMobilePriority(int chanMobilePriority) {
 		this.chanMobilePriority = chanMobilePriority;
 	}
-	public String getChanMandatory() {
-		return chanMandatory;
+	public String getChanDefault() {
+		return chanDefault;
 	}
-	public void setChanMandatory(String chanMandatory) {
-		this.chanMandatory = chanMandatory;
+	public void setChanDefault(String chanDefault) {
+		this.chanDefault = chanDefault;
+	}
+	public boolean isRequired() {
+		return required;
+	}
+	public void setRequired(boolean required) {
+		this.required = required;
+	}
+	public boolean isMandatory() {
+		return mandatory;
+	}
+	public void setMandatory(boolean mandatory) {
+		this.mandatory = mandatory;
 	}
 	public Date getEffective() {
 		return effective;

@@ -29,10 +29,12 @@ INSERT INTO `program_configuration`
               `chan_sms_priority`, 
                  `chan_mail_priority`, 
                     `chan_mobile_priority`, 
-                        `chan_mandatory`, `effective`, `expiration`, 
-                        `program_id`, `communication_id`) VALUES
+                        `chan_default`,
+                                `required`,
+                                   `mandatory`, `effective`, `expiration`, 
+                                               `program_id`, `communication_id`) VALUES
      ('Prescription Alerts Order Status', 'Order Status Program-level Configuration', 
-         2, 3, 1, 0, 0, 'Email', '2017-1-1', '9999-12-31', 101, 261)
+         2, 3, 1, 0, 0, 'Email', 0, 0, '2017-1-1', '9999-12-31', 101, 261)
 ;
 INSERT INTO `client` (`id`, `code`, `name`) VALUES 
 	 (142, 'AMD', 'AT&T INC.'),
@@ -59,10 +61,12 @@ INSERT INTO `client_configuration`
               `chan_sms_priority`, 
                  `chan_mail_priority`, 
                     `chan_mobile_priority`, 
-                        `chan_mandatory`, `effective`, `expiration`, 
-                        `client_id`, `communication_id`) VALUES
+                        `chan_default`,
+                                `required`,
+                                   `mandatory`, `effective`, `expiration`, 
+                                                `client_id`, `communication_id`) VALUES
      ('Prescription Alerts Order Status', 'Order Status Client-level Configuration', 
-         2, 3, 1, 0, 0, 'Email', '2017-1-1', '9999-12-31', 142, 261)
+         2, 3, 1, 0, 0, 'Email', 0, 0, '2017-1-1', '9999-12-31', 142, 261)
 ;
 INSERT INTO `communication` (`id`, `name`, `description`) VALUES 
 	 (1230, 'RFM Auto Renewal ', 'Notifies a member when we will be reaching out to their Dr. to get a new RX as part as the ReadyFill at Mail (RFM) program'),

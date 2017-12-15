@@ -39,7 +39,9 @@ public class ClientConfiguration implements Serializable {
 	private int chanSmsPriority;
 	private int chanMailPriority;
 	private int chanMobilePriority;
-	private String chanMandatory;
+	private String chanDefault;
+	private boolean required;
+	private boolean mandatory;
 	
 	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date effective;
@@ -54,7 +56,6 @@ public class ClientConfiguration implements Serializable {
 	public Client getClient() {
 		return client;
 	}
-
 	public void setClient(Client client) {
 		this.client = client;
 	}
@@ -67,7 +68,6 @@ public class ClientConfiguration implements Serializable {
 	public Communication getCommunication() {
 		return communication;
 	}
-
 	public void setCommunication(Communication communication) {
 		this.communication = communication;
 	}
@@ -75,87 +75,78 @@ public class ClientConfiguration implements Serializable {
 	public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 	public String getDescription() {
 		return description;
 	}
-
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
 	public int getChanEmailPriority() {
 		return chanEmailPriority;
 	}
-
 	public void setChanEmailPriority(int chanEmailPriority) {
 		this.chanEmailPriority = chanEmailPriority;
 	}
-
 	public int getChanIvrPriority() {
 		return chanIvrPriority;
 	}
-
 	public void setChanIvrPriority(int chanIvrPriority) {
 		this.chanIvrPriority = chanIvrPriority;
 	}
-
 	public int getChanSmsPriority() {
 		return chanSmsPriority;
 	}
-
 	public void setChanSmsPriority(int chanSmsPriority) {
 		this.chanSmsPriority = chanSmsPriority;
 	}
-
 	public int getChanMailPriority() {
 		return chanMailPriority;
 	}
-
 	public void setChanMailPriority(int chanMailPriority) {
 		this.chanMailPriority = chanMailPriority;
 	}
-
 	public int getChanMobilePriority() {
 		return chanMobilePriority;
 	}
-
 	public void setChanMobilePriority(int chanMobilePriority) {
 		this.chanMobilePriority = chanMobilePriority;
 	}
-
-	public String getChanMandatory() {
-		return chanMandatory;
+	public String getChanDefault() {
+		return chanDefault;
 	}
-
-	public void setChanMandatory(String chanMandatory) {
-		this.chanMandatory = chanMandatory;
+	public void setChanDefault(String chanDefault) {
+		this.chanDefault = chanDefault;
 	}
-
+	public boolean isRequired() {
+		return required;
+	}
+	public void setRequired(boolean required) {
+		this.required = required;
+	}
+	public boolean isMandatory() {
+		return mandatory;
+	}
+	public void setMandatory(boolean mandatory) {
+		this.mandatory = mandatory;
+	}
 	public Date getEffective() {
 		return effective;
 	}
-
 	public void setEffective(Date effective) {
 		this.effective = effective;
 	}
-
 	public Date getExpiration() {
 		return expiration;
 	}
-
 	public void setExpiration(Date expiration) {
 		this.expiration = expiration;
 	}
