@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,6 +30,7 @@ public class ClientController {
 	}
 	
 	@RequestMapping(value= "/client", method = RequestMethod.GET)
+//	@PreAuthorize("hasAuthority('read:clients')")
 	public ResponseEntity<List<Client>> getAllClients() {
 		List<Client> list = clientService.getAllClients();
 		return new ResponseEntity<List<Client>>(list, HttpStatus.OK);
