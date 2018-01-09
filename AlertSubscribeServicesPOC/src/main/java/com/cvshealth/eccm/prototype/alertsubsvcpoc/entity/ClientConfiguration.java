@@ -40,8 +40,8 @@ public class ClientConfiguration implements Serializable {
 	private int chanMailPriority;
 	private int chanMobilePriority;
 	private String chanDefault;
-	private boolean required;
-	private boolean mandatory;
+	private char required;
+	private char mandatory;
 	
 	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date effective;
@@ -126,16 +126,16 @@ public class ClientConfiguration implements Serializable {
 	public void setChanDefault(String chanDefault) {
 		this.chanDefault = chanDefault;
 	}
-	public boolean isRequired() {
+	public char getRequired() {
 		return required;
 	}
-	public void setRequired(boolean required) {
+	public void setRequired(char required) {
 		this.required = required;
 	}
-	public boolean isMandatory() {
+	public char getMandatory() {
 		return mandatory;
 	}
-	public void setMandatory(boolean mandatory) {
+	public void setMandatory(char mandatory) {
 		this.mandatory = mandatory;
 	}
 	public Date getEffective() {
