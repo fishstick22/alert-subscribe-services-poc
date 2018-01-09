@@ -19,8 +19,8 @@ INSERT INTO `program_profile` ( --id auto generated
                        `chan_mail`, 
                           `chan_mobile`, 
                               `effective`, `expiration`, program_id) VALUES
-     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 101 ),
-     (0, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 102 )
+     ('Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101 ),
+     ('N', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 102 )
 ;
 INSERT INTO `program_configuration` 
      (`name`, `description`, 
@@ -52,7 +52,7 @@ INSERT INTO `program_profile_client_exception` ( --id auto generated
                        `chan_mail`, 
                           `chan_mobile`, 
                               `effective`, `expiration`, program_id, client_id) VALUES
-     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 101, 142)
+     ('Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101, 142)
 ;
 INSERT INTO `client_configuration` 
      (`name`, `description`, 
