@@ -39,6 +39,7 @@ public class ProgramConfiguration implements Serializable {
 	private int chanEmailPriority;
 	private int chanIvrPriority;
 	private int chanSmsPriority;
+	private int chanSecurePriority;
 	private int chanMailPriority;
 	private int chanMobilePriority;
 	private String chanDefault;
@@ -109,6 +110,12 @@ public class ProgramConfiguration implements Serializable {
 	}
 	public void setChanSmsPriority(int chanSmsPriority) {
 		this.chanSmsPriority = chanSmsPriority;
+	}
+	public int getChanSecurePriority() {
+		return chanSecurePriority;
+	}
+	public void setChanSecurePriority(int chanSecurePriority) {
+		this.chanSecurePriority = chanSecurePriority;
 	}
 	public int getChanMailPriority() {
 		return chanMailPriority;
