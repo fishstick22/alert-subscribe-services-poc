@@ -7,7 +7,8 @@ INSERT INTO `communication` (`id`, `name`, `description`) VALUES
 ;
 INSERT INTO `program` (`id`, `name`, `description`) VALUES
      (101, 'Prescription Alerts', 'PBM Communications including Order Status and Refill Reminder alerts'),
-     (102, 'Non-Prescription Alerts', 'PBM non-transactional Communications like Portal Registration, Password Recovery')
+     (102, 'Non-Prescription Alerts', 'PBM non-transactional Communications like Portal Registration, Password Recovery'),
+     (103, 'Show Full Drug Names', 'Program that supports member opt-in to receive full drug names on email alerts')
 ;
 INSERT INTO `program_profile` ( --id auto generated
      `default_opt_in`, 
@@ -19,22 +20,25 @@ INSERT INTO `program_profile` ( --id auto generated
                        `chan_mail`, 
                           `chan_mobile`, 
                               `effective`, `expiration`, program_id) VALUES
-     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 101 ),
-     (0, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 102 )
+     ('Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101 ),
+     ('Y', 'N', 'Y', 'N', 'Y', 'N', 'N', 'N', '2017-1-1',  '9999-12-31', 102 ),
+     ('N', 'P', 'Y', 'N', 'N', 'N', 'N', 'N', '2017-1-1',  '9999-12-31', 103 )
 ;
 INSERT INTO `program_configuration` 
      (`name`, `description`, 
         `chan_email_priority`, 
            `chan_ivr_priority`, 
               `chan_sms_priority`, 
-                 `chan_mail_priority`, 
-                    `chan_mobile_priority`, 
-                        `chan_default`,
-                                `required`,
-                                   `mandatory`, `effective`, `expiration`, 
-                                               `program_id`, `communication_id`) VALUES
+                 `chan_secure_priority`, 
+                    `chan_mail_priority`,
+                       `chan_mobile_priority`, 
+                           `chan_default`,
+                                    `required`,
+                                         `mandatory`, 
+                                              `effective`, `expiration`, 
+                                                   `program_id`, `communication_id`) VALUES
      ('Prescription Alerts Order Status', 'Order Status Program-level Configuration', 
-         2, 3, 1, 0, 0, 'Email', 0, 0, '2017-1-1', '9999-12-31', 101, 261)
+         2, 3, 1, 1, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 101, 261)
 ;
 INSERT INTO `client` (`id`, `code`, `name`) VALUES 
 	 (142, 'AMD', 'AT&T INC.'),
@@ -52,21 +56,23 @@ INSERT INTO `program_profile_client_exception` ( --id auto generated
                        `chan_mail`, 
                           `chan_mobile`, 
                               `effective`, `expiration`, program_id, client_id) VALUES
-     (1, 1, 1, 1, 1, 1, 0, 0, '2017-1-1',  '9999-12-31', 101, 142)
+     ('Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101, 142)
 ;
 INSERT INTO `client_configuration` 
      (`name`, `description`, 
         `chan_email_priority`, 
            `chan_ivr_priority`, 
-              `chan_sms_priority`, 
-                 `chan_mail_priority`, 
-                    `chan_mobile_priority`, 
-                        `chan_default`,
-                                `required`,
-                                   `mandatory`, `effective`, `expiration`, 
+              `chan_sms_priority`,
+                 `chan_secure_priority`, 
+                    `chan_mail_priority`, 
+                        `chan_mobile_priority`, 
+                           `chan_default`,
+                                    `required`,
+                                         `mandatory`, 
+                                              `effective`, `expiration`, 
                                                 `client_id`, `communication_id`) VALUES
      ('Prescription Alerts Order Status', 'Order Status Client-level Configuration', 
-         2, 3, 1, 0, 0, 'Email', 0, 0, '2017-1-1', '9999-12-31', 142, 261)
+         2, 3, 1, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 142, 261)
 ;
 INSERT INTO `communication` (`id`, `name`, `description`) VALUES 
 	 (1230, 'RFM Auto Renewal ', 'Notifies a member when we will be reaching out to their Dr. to get a new RX as part as the ReadyFill at Mail (RFM) program'),
