@@ -35,16 +35,14 @@ public class ProgramProfile implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-//	private String name;
-//	private String description;
-	private boolean defaultOptIn = false;
-	private boolean visibleInUi = false;
-	private boolean chanEmail = false;
-	private boolean chanIvr = false;
-	private boolean chanSms = false;
-	private boolean chanSecure = false;
-	private boolean chanMail = false;
-	private boolean chanMobile = false;
+	private char defaultOptIn; // Y/N
+	private char visibleInUi; // Y/N/P(romote)
+	private char chanEmail; // Y/N
+	private char chanIvr; // Y/N
+	private char chanSms; // Y/N
+	private char chanSecure; // Y/N
+	private char chanMail; // Y/N
+	private char chanMobile; // Y/N
 	
 	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date effective;
@@ -69,66 +67,56 @@ public class ProgramProfile implements Serializable {
 	public void setId(int id) {
 		this.id = id;
 	}
-//	public String getName() {
-//		return name;
-//	}
-//	public void setName(String name) {
-//		this.name = name;
-//	}
-//	public String getDescription() {
-//		return description;
-//	}
-//	public void setDescription(String description) {
-//		this.description = description;
-//	}
-	public boolean isDefaultOptIn() {
+
+	public char getDefaultOptIn() {
 		return defaultOptIn;
 	}
-	public void setDefaultOptIn(boolean defaultOptIn) {
+	public void setDefaultOptIn(char defaultOptIn) {
 		this.defaultOptIn = defaultOptIn;
 	}
-	public boolean isVisibleInUi() {
+	public char getVisibleInUi() {
 		return visibleInUi;
 	}
-	public void setVisibleInUi(boolean visibleInUi) {
+	public void setVisibleInUi(char visibleInUi) {
 		this.visibleInUi = visibleInUi;
 	}
-	public boolean isChanEmail() {
+	public char getChanEmail() {
 		return chanEmail;
 	}
-	public void setChanEmail(boolean chanEmail) {
+	public void setChanEmail(char chanEmail) {
 		this.chanEmail = chanEmail;
 	}
-	public boolean isChanIvr() {
+	public char getChanIvr() {
 		return chanIvr;
 	}
-	public void setChanIvr(boolean chanIvr) {
+	public void setChanIvr(char chanIvr) {
 		this.chanIvr = chanIvr;
 	}
-	public boolean isChanSms() {
+	public char getChanSms() {
 		return chanSms;
 	}
-	public void setChanSms(boolean chanSms) {
+	public void setChanSms(char chanSms) {
 		this.chanSms = chanSms;
 	}
-	public boolean isChanSecure() {
+	public char getChanSecure() {
 		return chanSecure;
 	}
-	public void setChanSecure(boolean chanSecure) {
+	public void setChanSecure(char chanSecure) {
 		this.chanSecure = chanSecure;
 	}
-	public boolean isChanMail() {
+	public char getChanMail() {
 		return chanMail;
 	}
-	public void setChanMail(boolean chanMail) {
+	public void setChanMail(char chanMail) {
 		this.chanMail = chanMail;
 	}
-	public boolean isChanMobile() {
+	public char getChanMobile() {
 		return chanMobile;
 	}
-	public void setChanMobile(boolean chanMobile) {
+	public void setChanMobile(char chanMobile) {
 		this.chanMobile = chanMobile;
 	}
+
 	public Date getEffective() {
 		return effective;
 	}
