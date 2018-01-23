@@ -68,18 +68,19 @@ INSERT INTO CLIENT (ID, CODE, NAME) VALUES
 ;
 
 INSERT INTO PROGRAM_PROFILE_CLIENT_EXCEPTION ( --ID AUTO GENERATED
-      DEFAULT_OPT_IN, 
-           VISIBLE_IN_UI, 
-                CHAN_EMAIL, 
-                     CHAN_IVR, 
-                          CHAN_SMS, 
-                               CHAN_SECURE, 
-                                    CHAN_MAIL, 
-                                         CHAN_MOBILE, 
-                                              EFFECTIVE, EXPIRATION, PROGRAM_ID, CLIENT_ID,
+      DISPLAY_ORDER,
+         DEFAULT_OPT_IN, 
+              VISIBLE_IN_UI, 
+                   CHAN_EMAIL, 
+                        CHAN_IVR, 
+                             CHAN_SMS, 
+                                  CHAN_SECURE, 
+                                       CHAN_MAIL, 
+                                            CHAN_MOBILE, 
+                                                 EFFECTIVE, EXPIRATION, PROGRAM_ID, CLIENT_ID,
       HOUSE_KPG_CREATE_TIME, HOUSE_KPG_CREATE_TRAN_CD, HOUSE_KPG_CREATE_USER, 
       HOUSE_KPG_UPDATE_TIME, HOUSE_KPG_UPDATE_TRAN_CD, HOUSE_KPG_UPDATE_USER) VALUES
-     ('N', 'Y', 'Y', 'N', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101, 142,
+     (1, 'N', 'Y', 'Y', 'N', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101, 142,
       CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP' )
 ;
 

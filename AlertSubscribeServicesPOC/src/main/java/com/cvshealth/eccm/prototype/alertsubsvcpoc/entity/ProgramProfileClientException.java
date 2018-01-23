@@ -37,6 +37,7 @@ public class ProgramProfileClientException implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
+	private int displayOrder;
 	private char defaultOptIn; // Y/N
 	private char visibleInUi; // Y/N/P(romote)
 	private char chanEmail; // Y/N
@@ -96,6 +97,12 @@ public class ProgramProfileClientException implements Serializable {
 		this.id = id;
 	}
 
+	public int getDisplayOrder() {
+		return displayOrder;
+	}
+	public void setDisplayOrder(int displayOrder) {
+		this.displayOrder = displayOrder;
+	}
 	public char getDefaultOptIn() {
 		return defaultOptIn;
 	}
