@@ -13,6 +13,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -48,6 +50,19 @@ public class ProgramProfileClientException implements Serializable {
 	private Date effective;
 	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date expiration;
+	
+	// housekeeping fields
+	@Temporal(TemporalType.TIMESTAMP)
+	//@Version
+	private Date houseKpgCreateTime = new Date();
+	
+	private int houseKpgCreateTranCd = 0;
+	private String houseKpgCreateUser = "CMP";
+	
+	private Date houseKpgUpdateTime = new Date();
+	
+	private int houseKpgUpdateTranCd = 0;
+	private String houseKpgUpdateUser = "CMP";
 	
 	@ManyToOne
 	@JoinColumn(name="program_id", nullable=false)
@@ -142,5 +157,41 @@ public class ProgramProfileClientException implements Serializable {
 	public void setExpiration(Date expiration) {
 		this.expiration = expiration;
 	}
-
+	
+	public Date getHouseKpgCreateTime() {
+		return houseKpgCreateTime;
+	}
+	public void setHouseKpgCreateTime(Date houseKpgCreateTime) {
+		this.houseKpgCreateTime = houseKpgCreateTime;
+	}
+	public int getHouseKpgCreateTranCd() {
+		return houseKpgCreateTranCd;
+	}
+	public void setHouseKpgCreateTranCd(int houseKpgCreateTranCd) {
+		this.houseKpgCreateTranCd = houseKpgCreateTranCd;
+	}
+	public String getHouseKpgCreateUser() {
+		return houseKpgCreateUser;
+	}
+	public void setHouseKpgCreateUser(String houseKpgCreateUser) {
+		this.houseKpgCreateUser = houseKpgCreateUser;
+	}
+	public Date getHouseKpgUpdateTime() {
+		return houseKpgUpdateTime;
+	}
+	public void setHouseKpgUpdateTime(Date houseKpgUpdateTime) {
+		this.houseKpgUpdateTime = houseKpgUpdateTime;
+	}
+	public int getHouseKpgUpdateTranCd() {
+		return houseKpgUpdateTranCd;
+	}
+	public void setHouseKpgUpdateTranCd(int houseKpgUpdateTranCd) {
+		this.houseKpgUpdateTranCd = houseKpgUpdateTranCd;
+	}
+	public String getHouseKpgUpdateUser() {
+		return houseKpgUpdateUser;
+	}
+	public void setHouseKpgUpdateUser(String houseKpgUpdateUser) {
+		this.houseKpgUpdateUser = houseKpgUpdateUser;
+	}
 }

@@ -21,18 +21,24 @@ INSERT INTO PROGRAM
 ; 
 
 INSERT INTO PROGRAM_PROFILE ( --ID AUTO GENERATED
-      DEFAULT_OPT_IN, 
-           VISIBLE_IN_UI, 
-                CHAN_EMAIL, 
-                     CHAN_IVR, 
-                          CHAN_SMS, 
-                               CHAN_SECURE, 
-                                    CHAN_MAIL, 
-                                         CHAN_MOBILE, 
-                                              EFFECTIVE, EXPIRATION, PROGRAM_ID) VALUES
-     ('Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101 ),
-     ('N', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 102 ),
-     ('N', 'P', 'Y', 'N', 'N', 'N', 'N', 'N', '2017-1-1',  '9999-12-31', 103 )
+      DISPLAY_ORDER,
+         DEFAULT_OPT_IN, 
+              VISIBLE_IN_UI, 
+                   CHAN_EMAIL, 
+                        CHAN_IVR, 
+                             CHAN_SMS, 
+                                  CHAN_SECURE, 
+                                       CHAN_MAIL, 
+                                            CHAN_MOBILE, 
+                                                 EFFECTIVE, EXPIRATION, PROGRAM_ID,
+      HOUSE_KPG_CREATE_TIME, HOUSE_KPG_CREATE_TRAN_CD, HOUSE_KPG_CREATE_USER, 
+      HOUSE_KPG_UPDATE_TIME, HOUSE_KPG_UPDATE_TRAN_CD, HOUSE_KPG_UPDATE_USER) VALUES
+     (1, 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP' ),
+     (2, 'N', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 102,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP' ),
+     (3, 'N', 'P', 'Y', 'N', 'N', 'N', 'N', 'N', '2017-1-1',  '9999-12-31', 103,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP' )
 ;
 
 INSERT INTO PROGRAM_CONFIGURATION 
@@ -45,9 +51,13 @@ INSERT INTO PROGRAM_CONFIGURATION
                         CHAN_DEFAULT,
                                  REQUIRED,
                                        MANDATORY, 
-                                           EFFECTIVE, EXPIRATION, PROGRAM_ID, COMMUNICATION_ID) VALUES
-     (2, 3, 1, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 101, 261),
-     (1, 0, 0, 0, 0, 0, 'No',    'N', 'N', '2017-1-1', '9999-12-31', 103, 2536)
+                                           EFFECTIVE, EXPIRATION, PROGRAM_ID, COMMUNICATION_ID,
+      HOUSE_KPG_CREATE_TIME, HOUSE_KPG_CREATE_TRAN_CD, HOUSE_KPG_CREATE_USER, 
+      HOUSE_KPG_UPDATE_TIME, HOUSE_KPG_UPDATE_TRAN_CD, HOUSE_KPG_UPDATE_USER) VALUES
+     (2, 3, 1, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 101, 261,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP'),
+     (1, 0, 0, 0, 0, 0, 'No',    'N', 'N', '2017-1-1', '9999-12-31', 103, 2536,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP')
 ;
 
 INSERT INTO CLIENT (ID, CODE, NAME) VALUES 
@@ -55,6 +65,22 @@ INSERT INTO CLIENT (ID, CODE, NAME) VALUES
 	 (259, 'BCC', 'BLUE CROSS OF CONNECTICUT'),
 	 (339, 'BCAL', 'BLUE CROSS OF ALABAMA'),
 	 (428, 'BOH', 'BLUE CROSS OF OHIO')
+;
+
+INSERT INTO PROGRAM_PROFILE_CLIENT_EXCEPTION ( --ID AUTO GENERATED
+      DEFAULT_OPT_IN, 
+           VISIBLE_IN_UI, 
+                CHAN_EMAIL, 
+                     CHAN_IVR, 
+                          CHAN_SMS, 
+                               CHAN_SECURE, 
+                                    CHAN_MAIL, 
+                                         CHAN_MOBILE, 
+                                              EFFECTIVE, EXPIRATION, PROGRAM_ID, CLIENT_ID,
+      HOUSE_KPG_CREATE_TIME, HOUSE_KPG_CREATE_TRAN_CD, HOUSE_KPG_CREATE_USER, 
+      HOUSE_KPG_UPDATE_TIME, HOUSE_KPG_UPDATE_TRAN_CD, HOUSE_KPG_UPDATE_USER) VALUES
+     ('N', 'Y', 'Y', 'N', 'Y', 'Y', 'N', 'N', '2017-1-1',  '9999-12-31', 101, 142,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP' )
 ;
 
 INSERT INTO CLIENT_CONFIGURATION 
@@ -67,8 +93,11 @@ INSERT INTO CLIENT_CONFIGURATION
                         CHAN_DEFAULT,
                                  REQUIRED,
                                       MANDATORY, 
-                                           EFFECTIVE, EXPIRATION, CLIENT_ID, COMMUNICATION_ID) VALUES
-     (2, 3, 1, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 142, 261)
+                                           EFFECTIVE, EXPIRATION, CLIENT_ID, COMMUNICATION_ID,
+      HOUSE_KPG_CREATE_TIME, HOUSE_KPG_CREATE_TRAN_CD, HOUSE_KPG_CREATE_USER, 
+      HOUSE_KPG_UPDATE_TIME, HOUSE_KPG_UPDATE_TRAN_CD, HOUSE_KPG_UPDATE_USER) VALUES
+     (2, 3, 1, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 142, 261,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP')
 ;
 
 INSERT INTO COMMUNICATION (ID, NAME, DESCRIPTION) 
