@@ -40,6 +40,7 @@ public class ClientConfiguration implements Serializable {
 	private int chanIvrPriority;
 	private int chanSmsPriority;
 	private int chanSecurePriority;
+	private int chanClientSecurePriority;
 	private int chanMailPriority;
 	private int chanMobilePriority;
 	private String chanDefault;
@@ -129,6 +130,12 @@ public class ClientConfiguration implements Serializable {
 	}
 	public void setChanSecurePriority(int chanSecurePriority) {
 		this.chanSecurePriority = chanSecurePriority;
+	}
+	public int getChanClientSecurePriority() {
+		return chanClientSecurePriority;
+	}
+	public void setChanClientSecurePriority(int chanClientSecurePriority) {
+		this.chanClientSecurePriority = chanClientSecurePriority;
 	}
 	public int getChanMailPriority() {
 		return chanMailPriority;

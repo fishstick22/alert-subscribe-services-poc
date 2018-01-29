@@ -5,6 +5,9 @@ INSERT INTO COMMUNICATION (ID, NAME, DESCRIPTION)
 	 (261, 'Order Received ', 'Notifies a member when their order is received'),
 	 (263, 'Refill Expiring Notice', 'Notifies a member when one or more of their Rx''s is about to expire but has at least 1 refill left'),
 	 (264, 'Order Shipped', 'Notifies a member when their order is shipped'),
+	 (2529, 'ADT MED D OFF THERAPY', '')
+	 (2530, 'ADT MED D STARS OFF THERAPY', '')
+	 (2531, 'ADT MED D STARS REFILL REMINDER', '')
 	 (2536, 'SHOW DRUG RX', 'Member Preference Pseudo Key for Show Full Drug Name program')
 ;
 	
@@ -64,7 +67,8 @@ INSERT INTO CLIENT (ID, CODE, NAME) VALUES
 	 (142, 'AMD', 'AT&T INC.'),
 	 (259, 'BCC', 'BLUE CROSS OF CONNECTICUT'),
 	 (339, 'BCAL', 'BLUE CROSS OF ALABAMA'),
-	 (428, 'BOH', 'BLUE CROSS OF OHIO')
+	 (428, 'BOH', 'BLUE CROSS OF OHIO'),
+	 (14043, 'Z6500', 'FEP')
 ;
 
 INSERT INTO PROGRAM_PROFILE_CLIENT_EXCEPTION ( --ID AUTO GENERATED
@@ -89,15 +93,18 @@ INSERT INTO CLIENT_CONFIGURATION
          CHAN_IVR_PRIORITY, 
             CHAN_SMS_PRIORITY,
                CHAN_SECURE_PRIORITY,
-                  CHAN_MAIL_PRIORITY, 
-                     CHAN_MOBILE_PRIORITY, 
-                        CHAN_DEFAULT,
-                                 REQUIRED,
-                                      MANDATORY, 
-                                           EFFECTIVE, EXPIRATION, CLIENT_ID, COMMUNICATION_ID,
+                  CHAN_CLIENT_SECURE_PRIORITY,
+                     CHAN_MAIL_PRIORITY, 
+                        CHAN_MOBILE_PRIORITY, 
+                           CHAN_DEFAULT,
+                                    REQUIRED,
+                                         MANDATORY, 
+                                              EFFECTIVE, EXPIRATION, CLIENT_ID, COMMUNICATION_ID,
       HOUSE_KPG_CREATE_TIME, HOUSE_KPG_CREATE_TRAN_CD, HOUSE_KPG_CREATE_USER, 
       HOUSE_KPG_UPDATE_TIME, HOUSE_KPG_UPDATE_TRAN_CD, HOUSE_KPG_UPDATE_USER) VALUES
-     (2, 3, 1, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 142, 261,
+     (2, 3, 1, 0, 0, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 142, 261,
+      CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP'),
+     (2, 3, 1, 0, 1, 0, 0, 'Email', 'N', 'N', '2017-1-1', '9999-12-31', 14043, 261,
       CURRENT_TIMESTAMP, '0', 'CMP', CURRENT_TIMESTAMP, '0', 'CMP')
 ;
 
