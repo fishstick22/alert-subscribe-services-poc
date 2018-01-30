@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<umlnotation:UMLDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmi:id="_je1aUQXMEeiJ-NRAk_nGAw" type="Class" name="classdiagram.dnx">
+  <eAnnotations xmi:id="_je1aUgXMEeiJ-NRAk_nGAw" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+    <details xmi:id="_je1aUwXMEeiJ-NRAk_nGAw" key="com.ibm.xtools.activities.javaVisualizerActivity" value="1"/>
+    <details xmi:id="_je1aVAXMEeiJ-NRAk_nGAw" key="com.ibm.xtools.activities.EJB3JPAVisualizerActivity" value="1"/>
+  </eAnnotations>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_mrgxsAXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_msQYkAXMEeiJ-NRAk_nGAw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_msQYkQXMEeiJ-NRAk_nGAw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_msQYkgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_msQYkwXMEeiJ-NRAk_nGAw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_msQYlAXMEeiJ-NRAk_nGAw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_msQYlQXMEeiJ-NRAk_nGAw" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_mtmcYgXMEeiJ-NRAk_nGAw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_mt5XUAXMEeiJ-NRAk_nGAw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Communication%5Bjcu%5Ename=Communication.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mrgxsQXMEeiJ-NRAk_nGAw" x="17118" y="1902"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_mt5XUQXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mt5XUwXMEeiJ-NRAk_nGAw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_mt5XVAXMEeiJ-NRAk_nGAw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_mt5XVQXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_mt5XVgXMEeiJ-NRAk_nGAw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_mt5XVwXMEeiJ-NRAk_nGAw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_mt5XWAXMEeiJ-NRAk_nGAw" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muDIUAXMEeiJ-NRAk_nGAw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muDIUQXMEeiJ-NRAk_nGAw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Client%5Bjcu%5Ename=Client.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mt5XUgXMEeiJ-NRAk_nGAw" x="29481" y="1902"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_muDIUgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_muDIVAXMEeiJ-NRAk_nGAw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_muDIVQXMEeiJ-NRAk_nGAw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muDIVgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muDIVwXMEeiJ-NRAk_nGAw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muDIWAXMEeiJ-NRAk_nGAw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muDIWQXMEeiJ-NRAk_nGAw" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muMSRAXMEeiJ-NRAk_nGAw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muMSRQXMEeiJ-NRAk_nGAw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ClientConfiguration%5Bjcu%5Ename=ClientConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_muDIUwXMEeiJ-NRAk_nGAw" x="23775" y="17752" height="13092"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_muMSRgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_muMSSAXMEeiJ-NRAk_nGAw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_muMSSQXMEeiJ-NRAk_nGAw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muMSSgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muMSSwXMEeiJ-NRAk_nGAw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muMSTAXMEeiJ-NRAk_nGAw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muMSTQXMEeiJ-NRAk_nGAw" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muWDRAXMEeiJ-NRAk_nGAw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muWDRQXMEeiJ-NRAk_nGAw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Program%5Bjcu%5Ename=Program.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_muMSRwXMEeiJ-NRAk_nGAw" x="1268" y="1585" width="9255" height="10534"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_muWDRgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_muWDSAXMEeiJ-NRAk_nGAw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_muWDSQXMEeiJ-NRAk_nGAw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muWDSgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muWDSwXMEeiJ-NRAk_nGAw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muWDTAXMEeiJ-NRAk_nGAw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muWDTQXMEeiJ-NRAk_nGAw" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muf0RAXMEeiJ-NRAk_nGAw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muf0RQXMEeiJ-NRAk_nGAw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramConfiguration%5Bjcu%5Ename=ProgramConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_muWDRwXMEeiJ-NRAk_nGAw" x="11412" y="17118" height="13079"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_muf0RgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_muf0SAXMEeiJ-NRAk_nGAw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_muf0SQXMEeiJ-NRAk_nGAw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muf0SgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muf0SwXMEeiJ-NRAk_nGAw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muf0TAXMEeiJ-NRAk_nGAw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muf0TQXMEeiJ-NRAk_nGAw" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muyvNAXMEeiJ-NRAk_nGAw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muyvNQXMEeiJ-NRAk_nGAw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramProfile%5Bjcu%5Ename=ProgramProfile.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_muf0RwXMEeiJ-NRAk_nGAw" x="1268" y="15850" height="15923"/>
+  </children>
+  <children xmi:type="umlnotation:UMLShape" xmi:id="_muyvQAXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+    <children xmi:type="notation:DecorationNode" xmi:id="_muyvQgXMEeiJ-NRAk_nGAw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_muyvQwXMEeiJ-NRAk_nGAw" width="1320" height="1320"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muyvRAXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muyvRQXMEeiJ-NRAk_nGAw" type="Name"/>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_muyvRgXMEeiJ-NRAk_nGAw" type="Parent"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_muyvRwXMEeiJ-NRAk_nGAw" type="ANNOTATION_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_mvO0FAXMEeiJ-NRAk_nGAw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+    <children xmi:type="notation:ListCompartment" xmi:id="_mvZMIAXMEeiJ-NRAk_nGAw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramProfileClientException%5Bjcu%5Ename=ProgramProfileClientException.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_muyvQQXMEeiJ-NRAk_nGAw" x="35821" y="17752" height="12656"/>
+  </children>
+  <element xsi:nil="true"/>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfEVkAXMEeiJ-NRAk_nGAw" source="_mrgxsAXMEeiJ-NRAk_nGAw" target="_muDIUgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfOGkQXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGkwXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGlQXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGlAXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfOGkgXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Communication%5Bjcu%5Ename=Communication.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ClientConfiguration%5Bjcu%5Ename=ClientConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfOGkAXMEeiJ-NRAk_nGAw" points="[-379, 106, -2826, -6400]$[-379, 2988, -2826, -3518]$[573, 2988, -1874, -3518]$[573, 6506, -1874, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7OtIAXMEeiJ-NRAk_nGAw" id="(0.8856510512725931,0.9888016745159602)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7OtIQXMEeiJ-NRAk_nGAw" id="(0.666759580362678,0.0)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfOGlgXMEeiJ-NRAk_nGAw" source="_mrgxsAXMEeiJ-NRAk_nGAw" target="_muWDRgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfOGmAXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGmgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGnAXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGmwXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfOGmQXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Communication%5Bjcu%5Ename=Communication.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramConfiguration%5Bjcu%5Ename=ProgramConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfOGlwXMEeiJ-NRAk_nGAw" points="[-2166, 80, 1196, -5766]$[-2166, 4232, 1196, -1614]$[-3754, 4232, -392, -1614]$[-3754, 5846, -392, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPJQXMEeiJ-NRAk_nGAw" id="(0.37578384360014755,0.9916274201988488)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPJgXMEeiJ-NRAk_nGAw" id="(0.8000387476751395,-4.704789921877417E-16)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfOGnQXMEeiJ-NRAk_nGAw" source="_mt5XUQXMEeiJ-NRAk_nGAw" target="_muDIUgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfOGnwXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGoQXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGowXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGogXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfOGoAXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Client%5Bjcu%5Ename=Client.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ClientConfiguration%5Bjcu%5Ename=ClientConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfOGngXMEeiJ-NRAk_nGAw" points="[-2689, 9450, 4648, -19344]$[-2689, 12332, 4648, -16462]$[-4644, 12332, 2693, -16462]$[-4644, 15850, 2693, -12944]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeIgXMEeiJ-NRAk_nGAw" id="(0.33335262345679006,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeIwXMEeiJ-NRAk_nGAw" id="(0.33342628739150654,0.9967547519703291)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfOGpAXMEeiJ-NRAk_nGAw" source="_mt5XUQXMEeiJ-NRAk_nGAw" target="_muyvQAXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfOGpgXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGqAXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGqgXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGqQXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfOGpwXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Client%5Bjcu%5Ename=Client.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramProfileClientException%5Bjcu%5Ename=ProgramProfileClientException.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfOGpQXMEeiJ-NRAk_nGAw" points="[1540, 104, -620, -6400]$[1540, 2351, -620, -4153]$[3127, 2351, 967, -4153]$[3127, 6504, 967, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeJAXMEeiJ-NRAk_nGAw" id="(0.6666859567901233,0.9890109890109883)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeJQXMEeiJ-NRAk_nGAw" id="(0.6666666666666666,0.0)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfOGqwXMEeiJ-NRAk_nGAw" source="_muDIUgXMEeiJ-NRAk_nGAw" target="_mt5XUQXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfOGrQXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGrwXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGsQXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGsAXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfOGrgXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ClientConfiguration%5Bjcu%5Ename=ClientConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Client%5Bjcu%5Ename=Client.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfOGrAXMEeiJ-NRAk_nGAw" points="[0, 0, -816, -1268]$[54, 739, -762, -529]$[869, 739, 53, -529]$[816, 1268, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeIAXMEeiJ-NRAk_nGAw" id="(0.666759580362678,0.9967547519703291)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeIQXMEeiJ-NRAk_nGAw" id="(0.6666859567901233,0.0)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfOGsgXMEeiJ-NRAk_nGAw" source="_muDIUgXMEeiJ-NRAk_nGAw" target="_mrgxsAXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfOGtAXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGtgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGuAXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfOGtwXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfOGtQXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ClientConfiguration%5Bjcu%5Ename=ClientConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Communication%5Bjcu%5Ename=Communication.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfOGswXMEeiJ-NRAk_nGAw" points="[0, 0, 376, 1267]$[28, -529, 404, 738]$[-343, -529, 33, 738]$[-376, -1267, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPKQXMEeiJ-NRAk_nGAw" id="(0.33342628739150654,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPKgXMEeiJ-NRAk_nGAw" id="(0.40008065376014385,0.989010989010989)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfOGuQXMEeiJ-NRAk_nGAw" source="_muMSRgXMEeiJ-NRAk_nGAw" target="_muf0RgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfX3kAXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3kgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3lAXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3kwXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX3kQXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Program%5Bjcu%5Ename=Program.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramProfile%5Bjcu%5Ename=ProgramProfile.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfOGugXMEeiJ-NRAk_nGAw" points="[0, 0, 850, 1981]$[16, -529, 866, 1452]$[-823, -529, 27, 1452]$[-850, -1981, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeKgXMEeiJ-NRAk_nGAw" id="(0.2,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeKwXMEeiJ-NRAk_nGAw" id="(0.3333333333333333,0.99644128113879)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfX3lQXMEeiJ-NRAk_nGAw" source="_muMSRgXMEeiJ-NRAk_nGAw" target="_muWDRgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfX3lwXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3mQXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3mwXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3mgXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX3mAXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Program%5Bjcu%5Ename=Program.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramConfiguration%5Bjcu%5Ename=ProgramConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfX3lgXMEeiJ-NRAk_nGAw" points="[526, 57, -4959, -5130]$[526, 1351, -4959, -3836]$[5606, 1351, 121, -3836]$[5606, 5161, 121, -26]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeLgXMEeiJ-NRAk_nGAw" id="(0.6666666666666666,0.9946236559139777)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPIAXMEeiJ-NRAk_nGAw" id="(0.18264104153750774,0.0020643780105512655)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfX3nAXMEeiJ-NRAk_nGAw" source="_muMSRgXMEeiJ-NRAk_nGAw" target="_muyvQAXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfX3ngXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3oAXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3ogXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3oQXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX3nwXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Program%5Bjcu%5Ename=Program.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramProfileClientException%5Bjcu%5Ename=ProgramProfileClientException.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfX3nQXMEeiJ-NRAk_nGAw" points="[-878, 10429, -32129, -18246]$[-878, 13284, -32129, -15391]$[31882, 13284, 631, -15391]$[31882, 16167, 631, -12508]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPJwXMEeiJ-NRAk_nGAw" id="(0.6,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPKAXMEeiJ-NRAk_nGAw" id="(0.3333333333333333,0.9966052376333652)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfX3owXMEeiJ-NRAk_nGAw" source="_muWDRgXMEeiJ-NRAk_nGAw" target="_muMSRgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfX3pQXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3pwXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3qQXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3qAXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX3pgXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProgramConfiguration%5Bjcu%5Ename=ProgramConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Program%5Bjcu%5Ename=Program.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfX3pAXMEeiJ-NRAk_nGAw" points="[0, 0, 1936, 1797]$[33, -1058, 1969, 739]$[-1908, -1058, 28, 739]$[-1936, -1797, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPIQXMEeiJ-NRAk_nGAw" id="(0.40003874767513936,-4.704789921877417E-16)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPIgXMEeiJ-NRAk_nGAw" id="(0.3333333333333333,0.9946236559139777)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfX3qgXMEeiJ-NRAk_nGAw" source="_muWDRgXMEeiJ-NRAk_nGAw" target="_mrgxsAXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfX3rAXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3rgXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3sAXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3rwXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX3rQXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProgramConfiguration%5Bjcu%5Ename=ProgramConfiguration.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Communication%5Bjcu%5Ename=Communication.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfX3qwXMEeiJ-NRAk_nGAw" points="[3130, 0, -3132, 5870]$[3130, -2884, -3132, 2986]$[4887, -2884, -1375, 2986]$[4887, -5766, -1375, 104]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPIwXMEeiJ-NRAk_nGAw" id="(0.2000387476751395,-4.704789921877417E-16)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7iPJAXMEeiJ-NRAk_nGAw" id="(0.200080671771256,0.989010989010989)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfX3sQXMEeiJ-NRAk_nGAw" source="_muf0RgXMEeiJ-NRAk_nGAw" target="_muMSRgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfX3swXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3tQXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3twXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3tgXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX3tAXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProgramProfile%5Bjcu%5Ename=ProgramProfile.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Program%5Bjcu%5Ename=Program.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfX3sgXMEeiJ-NRAk_nGAw" points="[-1283, -15761, -546, 14265]$[-1283, -19597, -546, 10429]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeLAXMEeiJ-NRAk_nGAw" id="(0.6666666666666666,0.99644128113879)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeLQXMEeiJ-NRAk_nGAw" id="(0.4,0.0)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfX3uAXMEeiJ-NRAk_nGAw" source="_muyvQAXMEeiJ-NRAk_nGAw" target="_mt5XUQXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfX3ugXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3vAXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3vgXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3vQXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX3uwXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProgramProfileClientException%5Bjcu%5Ename=ProgramProfileClientException.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Client%5Bjcu%5Ename=Client.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfX3uQXMEeiJ-NRAk_nGAw" points="[1901, 0, 6151, 6504]$[1901, -3518, 6151, 2986]$[314, -3518, 4564, 2986]$[314, -6400, 4564, 104]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeJgXMEeiJ-NRAk_nGAw" id="(0.3333333333333333,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeJwXMEeiJ-NRAk_nGAw" id="(0.33335262345679006,0.9890109890109883)"/>
+  </edges>
+  <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nfX3vwXMEeiJ-NRAk_nGAw" source="_muyvQAXMEeiJ-NRAk_nGAw" target="_muMSRgXMEeiJ-NRAk_nGAw" fontName="Segoe UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nfX3wQXMEeiJ-NRAk_nGAw" type="KindLabel">
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3wwXMEeiJ-NRAk_nGAw" type="Stereotype"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3xQXMEeiJ-NRAk_nGAw" type="Kind"/>
+      <children xmi:type="notation:BasicDecorationNode" xmi:id="_nfX3xAXMEeiJ-NRAk_nGAw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nfX3wgXMEeiJ-NRAk_nGAw" y="-186"/>
+    </children>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProgramProfileClientException%5Bjcu%5Ename=ProgramProfileClientException.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Program%5Bjcu%5Ename=Program.java%5Bjpack%5Ename=com.cvshealth.eccm.prototype.alertsubsvcpoc.entity%5Bjsrcroot%5Esrcfolder=src/main/java%5Bproject%5Eid=AlertSubscribeServicesPOC%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nfX3wAXMEeiJ-NRAk_nGAw" points="[-3160, -12508, 28460, 16167]$[-3160, -14121, 28460, 14554]$[-9828, -14121, 21792, 14554]$[-9828, -17296, 21792, 11379]$[-31391, -17296, 229, 11379]$[-31391, -18246, 229, 10429]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeKAXMEeiJ-NRAk_nGAw" id="(0.6666666666666666,0.9966052376333652)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n7YeKQXMEeiJ-NRAk_nGAw" id="(0.8,0.0)"/>
+  </edges>
+</umlnotation:UMLDiagram>
